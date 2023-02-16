@@ -1,0 +1,435 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  a {
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: wheat;
+    text-decoration: none;
+    padding: 20px 5px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .wrapper {
+    width: 375px;
+    margin: 0px auto;
+    height: fit-content;
+    display: flex;
+    background-color: #E5E5E5;
+    flex-direction: column;
+  }
+  
+  .toolbar {
+    color: #6070FF;
+    display: flex;
+  }
+  
+  .toolbar ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+  }
+  
+  .toolbar ul li {
+    flex: 1;
+    align-self: center;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .toolbar ul li b {
+    color: #6070FF;
+  }
+  
+  .logo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  
+  .logo a {
+    text-align: left;
+    margin-left: 10px;
+  }
+  
+  .collapse-button a {
+    text-align: right;
+    color: #6070FF;
+  }
+  
+  .headline {
+    background-image: url(./assets/images/header-shape-mobile.png),url(./assets/images/header-background-mobile.png);
+    background-repeat: no-repeat,no-repeat;
+    background-size: auto,auto;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    color: #172B4D;
+    padding: 50px 20px;
+  }
+  
+  .headline h1 {
+    width: 325px;
+    padding: 10px;
+    height: fit-content;
+    margin-bottom: 0px;
+    margin: 0px;
+    line-height: 40px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .headline p {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .headline b {
+    color: #6070ff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .headline .social-media {
+    display: flex;
+    width: 100%;
+}
+
+/*  */
+.headline .social-media ul {
+    width: 60%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.social-media ul li {
+    flex: 1;
+}
+
+.social-media ul li a {
+    color:#505F79;
+    padding: 10px 0;
+}
+  
+  .menu {
+    display: none;
+  }
+  
+  .content {
+    position: relative;
+    top: 10%;
+  }
+
+  /* //////Projects////// */
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .card-works {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin: 40px 20px;
+    border-radius: 10px;
+    
+  }
+  .image-cover {
+    width: 90%;
+    height: fit-content;
+    margin-top: 10px;
+  }
+  .card-works img {
+    width: 100%;
+    height: auto;
+    
+  }
+  .project-info {
+    width: 90%;
+  }
+
+ .project-info h1 {
+    color: #172B4D;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+ }
+  .project-info .label ,
+  .project-info .tags {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .project-info .label li{
+      flex:1;
+      list-style: disc;
+      color: gray;
+      text-align: left;
+      margin: 0 10px;
+      padding: 0;
+      font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+      
+    }
+  .project-info .label li:first-child {
+    list-style: none;
+    color: #172B4D;
+    margin: 0;
+    font-weight: bold;
+  }
+  .project-info .tags li {
+    margin: 0 5px;
+  }
+  .project-info .tags li a {
+    background-color: #EBEBFF;
+    padding: 2px 6px;
+    border-radius: 5px;
+    color: #6070FF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+  }
+  .project-info button {
+    padding: 7px;
+    border: 1px solid #6070FF;
+    border-radius: 5px;
+    color: #6070FF;
+  }
+
+  /* ///////////about me ///////// */
+
+  .aboutme {
+    
+        background-image: url(./assets/images/about-myself.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        width: 100%;
+        height: fit-content;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: #172B4D;
+        padding: 50px 20px;
+      
+  }
+  .aboutme .card-works{
+   align-items: flex-start;
+   margin: 20px;
+  }
+  .aboutme .card-works b {
+    color: #6070FF;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  .aboutme .card-works h1{
+    margin:0;
+    font-size: 26px;
+    font-weight: bolder;
+
+  }
+  .aboutme .card-works ul {
+      display: flex;
+      flex-direction: row;
+      width: 60%;
+      margin: 0px;
+      padding: 0px;
+      justify-content: flex-start;
+    }
+    .aboutme .card-works ul li{
+        color: #172B4D;
+        margin: 0;
+        padding: 0px 0;
+    }
+    .aboutme .card-works .languages {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .aboutme .card-works .languages li {
+        display: flex;
+        width: 100%;
+        background-color: #E5E5E5;
+        margin: 10px 5px;
+        padding: 0px 7px;
+        border-radius: 5px;
+    }
+    .aboutme .card-works .languages h5 {
+        display: inline;
+        margin: 10px;
+       flex: 1;
+    }
+    .html-lang-img {
+        background-image: url(./assets/images/html.png);
+        width: 50px;
+        height: 50px;
+        float: left;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .css-lang-img {
+        background-image: url(./assets/images/css.png);
+        width: 50px;
+        height: 50px;
+        float: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .javascript-lang-img {
+        background-image: url(./assets/images/javascript.png);
+        width: 50px;
+        height: 50px;
+        float: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  
+    .aboutme .card-works button {
+        width: 100%;
+        height: 50px;
+        border: none;
+        background-color: white;
+        border-bottom: 1px solid #E5E5E5;
+        text-align: left;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .aboutme .card-works button span {
+        float: right;
+    }
+   .contactme {
+    background-image: url(./assets/images/header-shape-mobile.png), url(./assets/images/Contact-me.png);
+    background-repeat: no-repeat,no-repeat;
+    background-size: cover, cover;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+   }
+   .contactme div {
+    margin: 30px;
+    color: white;
+   }
+  .contactme textarea{
+    width: 100%;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+  .contactme input {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    border: none;
+    padding-left: 10px;
+    border-radius: 5px;
+    color: #6070FF;
+
+  }
+ 
+  @media all and (min-width:375px) {
+    .wrapper {
+      width: 100%;
+      margin: 0px auto;
+    }
+  }
+  
+  @media all and (min-width:768px) {
+    .menu {
+      display: inline;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-size: 14px;
+    }
+
+    
+  
+    .toolbar ul .logo {
+      flex: 3;
+    }
+  
+    .collapse-button {
+      display: none;
+    }
+  
+  
+    .headline .social-media ul {
+      width: 20%;
+      justify-content: space-around;
+    }
+  
+    .content p {
+      width: 70%;
+    }
+  
+    .social-media ul li {
+      flex: 0;
+    }
+  
+    .headline .content {
+      position: relative;
+      top: 10%;
+      left: 5%;
+      width: 80%;
+      height: fit-content;
+      margin: 50px;
+      font-size: larger;
+    }
+  
+  }
+  
+  @media all and (min-width:1000px) {}
