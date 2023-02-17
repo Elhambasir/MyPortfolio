@@ -3,25 +3,6 @@
 
 Modify this file to match your project and remove sections that don't apply.
 
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
@@ -103,7 +84,7 @@ To run tests, run the following command: In visual studio code with live server 
 
 ### Deployment
 
-You can deploy this project using: It is not compatable with different screen.
+You can deploy this project using: GitHub
 
 <!-- AUTHORS -->
 
@@ -147,4 +128,4 @@ If you like this project reach me on my contact
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank in advance
+I would like to thank in advance. This is the first draft of this project. It works on my machine. If you try it and run into problems, please create an issue; I'll do what I can to fix it.

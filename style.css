@@ -42,6 +42,20 @@ li {
   flex-direction: column;
 }
 
+header {
+  background-color: white;
+  display: flex;
+}
+
+header > * {
+  flex: 1;
+}
+
+header .logo {
+  text-align: left;
+  margin-left: 25px;
+  color: #6070ff;
+}
 .toolbar {
   color: #6070ff;
   display: flex;
@@ -64,11 +78,14 @@ li {
   padding-right: 15px;
 }
 
-.headline b {
+.headline a {
   color: #6070ff;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  text-align: left;
+  margin: 0;
+  padding: 10px 0;
 }
 
 .toolbar ul li b {
@@ -94,11 +111,11 @@ li {
 }
 
 .headline {
-  background-image: url(./assets/images/header-shape-mobile.png), url(./assets/images/header-background-mobile.png);
-  background-repeat: no-repeat, no-repeat;
-  background-size: auto, auto;
+  background-image: url(./assets/images/header-shape-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-  height: fit-content;
+  height: 600px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -106,6 +123,7 @@ li {
   flex-wrap: wrap;
   color: #172b4d;
   padding: 50px 20px;
+  border-radius: 0 0 0 50px;
 }
 
 .headline h1 {
@@ -125,6 +143,7 @@ li {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  margin-bottom: 10px;
 }
 
 .headline .social-media {
@@ -249,8 +268,9 @@ li {
 }
 
 .project-info button {
-  padding: 7px;
-  border: 1px solid #6070ff;
+  padding: 7px 10px;
+  border: 1px solid #6070ff !important;
+  width: fit-content !important;
   border-radius: 5px;
   color: #6070ff;
 }
@@ -364,9 +384,11 @@ li {
 }
 
 .contactme {
-  background-image: url(./assets/images/header-shape-mobile.png), url(./assets/images/Contact-me.png);
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, cover;
+  background-image: url(./assets/images/header-shape-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #6070ff;
+  color: white;
   display: flex;
   width: 100%;
   height: fit-content;
@@ -375,13 +397,28 @@ li {
   align-items: center;
   flex-wrap: wrap;
   padding: 20px;
+  border-radius: 60px 0 0 0;
 }
-
+footer {
+  background-color: white;
+}
 .contactme div {
-  margin: 30px;
+  margin: 50px 20px;
+  text-align: center;
   color: white;
 }
-
+.contactme div h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin: 0;
+}
+.contactme div p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
 .contactme textarea {
   width: 100%;
   margin: 10px 0;
