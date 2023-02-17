@@ -51,11 +51,20 @@ header > * {
   flex: 1;
 }
 
+.logo {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
 header .logo {
   text-align: left;
   margin-left: 25px;
   color: #6070ff;
 }
+
 .toolbar {
   color: #6070ff;
   display: flex;
@@ -90,14 +99,6 @@ header .logo {
 
 .toolbar ul li b {
   color: #6070ff;
-}
-
-.logo {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
 }
 
 .logo a {
@@ -303,6 +304,14 @@ header .logo {
   font-size: 12px;
 }
 
+.contactme div h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin: 0;
+}
+
 .aboutme .card-works h1 {
   margin: 0;
   font-size: 26px;
@@ -399,26 +408,23 @@ header .logo {
   padding: 20px;
   border-radius: 60px 0 0 0;
 }
+
 footer {
   background-color: white;
 }
+
 .contactme div {
   margin: 50px 20px;
   text-align: center;
   color: white;
 }
-.contactme div h1 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  margin: 0;
-}
+
 .contactme div p {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
 }
+
 .contactme textarea {
   width: 100%;
   margin: 10px 0;
