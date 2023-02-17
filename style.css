@@ -187,7 +187,6 @@ header .logo {
 }
 
 .card-works {
-  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -514,5 +513,10 @@ footer {
     height: fit-content;
     margin: 50px;
     font-size: larger;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
   }
 }
