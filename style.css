@@ -47,7 +47,7 @@ header {
   display: flex;
 }
 
-header > * {
+header>* {
   flex: 1;
 }
 
@@ -431,6 +431,7 @@ footer {
 .contactme textarea {
   width: 100%;
   margin: 10px 0;
+  padding-top: 7px;
   border: none;
   border-radius: 5px;
   padding-left: 10px;
@@ -450,6 +451,15 @@ footer {
   width: fit-content;
   float: left;
   padding: 0 10px;
+}
+
+.contactme form input:last-child:hover {
+  cursor: pointer;
+  background-color: #6070ff;
+  color: white;
+  box-shadow: 1px;
+  border: 1px solid white;
+  font-weight: bolder;
 }
 
 .fa-brands {
