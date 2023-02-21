@@ -33,8 +33,6 @@ Modify this file to match your project and remove sections that don't apply.
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -97,7 +95,6 @@ You can deploy this project using: GitHub
 - LinkedIn: [basir ahmadi](https://www.linkedin.com/in/basir-ahmadi-8aba89263)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- FUTURE FEATURES -->
 ## Future Features
