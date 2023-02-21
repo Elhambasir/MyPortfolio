@@ -126,3 +126,6 @@ If you like this project reach me on my contact
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank in advance. This is the first draft of this project. It works on my machine. If you try it and run into problems, please create an issue; I'll do what I can to fix it.
+
+📝 License
+This project is [MIT](./LICENSE) licensed.
