@@ -47,7 +47,7 @@ header {
   display: flex;
 }
 
-header>* {
+header > * {
   flex: 1;
 }
 
@@ -350,25 +350,6 @@ header .logo {
 .aboutme .card-works .languages li i {
   margin: 0 10px;
   color: orange;
-}
-
-.html-lang-img {
-  background-image: url(./assets/images/html.png);
-  width: 50px;
-  height: 50px;
-  float: left;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.css-lang-img {
-  background-image: url(./assets/images/css.png);
-  width: 50px;
-  height: 50px;
-  float: left;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .javascript-lang-img {
