@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -10,7 +12,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -420,6 +422,7 @@ footer {
 
 .contactme input {
   width: 100%;
+  font-family: 'Poppins', sans-serif;
   height: 40px;
   margin: 10px 0;
   border: none;
