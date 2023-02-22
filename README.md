@@ -33,8 +33,6 @@ Modify this file to match your project and remove sections that don't apply.
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -90,14 +88,12 @@ You can deploy this project using: GitHub
 
 ## 👥 Authors <a name="authors"></a>
 
-
 👤 **Author**
 
 - GitHub: [@Elhambasir](https://github.com/Elhambasir)
 - LinkedIn: [basir ahmadi](https://www.linkedin.com/in/basir-ahmadi-8aba89263)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- FUTURE FEATURES -->
 ## Future Features
@@ -113,14 +109,11 @@ You can deploy this project using: GitHub
 
 Contributions, issues, and feature requests are welcome!
 
-
 Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SUPPORT -->
-
-> Write a message to encourage readers to support your project
 
 If you like this project reach me on my contact
 
