@@ -1,11 +1,8 @@
 # MyPortfolio
 <a name="readme-top"></a>
 
-Modify this file to match your project and remove sections that don't apply.
-
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Microverse README Template</b></h3>
@@ -122,3 +119,6 @@ If you like this project reach me on my contact
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank in advance. This is the first draft of this project. It works on my machine. If you try it and run into problems, please create an issue; I'll do what I can to fix it.
+
+📝 License
+This project is [MIT](./LICENSE) licensed.
