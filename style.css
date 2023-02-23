@@ -369,7 +369,7 @@ header .logo {
 
 .aboutme .card-works .languages li a {
   font-weight: 300;
-  color: black;
+  color: #253858;
   font-size: 15px;
   line-height: 40px;
 }
@@ -390,7 +390,14 @@ header .logo {
   background-color: white;
   border-bottom: 1px solid #e5e5e5;
   text-align: left;
-  font-size: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: #253858;
+}
+
+.aboutme .lang .language-button {
+  border: 0;
 }
 
 .aboutme .card-works .contacts button {
@@ -412,6 +419,7 @@ header .logo {
 }
 
 .aboutme .card-works button span {
+  color: #253858;
   float: right;
 }
 
@@ -752,6 +760,10 @@ footer {
     font-size: 17px;
     line-height: 20px;
   }
+
+  .contactme form input:last-child {
+    float: none;
+  }
 }
 
 @media all and (min-width: 1024px) {
@@ -967,5 +979,9 @@ footer {
     font-weight: 400;
     font-size: 17px;
     line-height: 20px;
+  }
+
+  .contactme form input:last-child {
+    float: none;
   }
 }
