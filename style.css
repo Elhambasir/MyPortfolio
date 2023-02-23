@@ -315,7 +315,7 @@ header .logo {
   flex-wrap: wrap;
   color: #172b4d;
   border-radius: 0 70px 0 0;
-  margin-top:60px ;
+  margin-top: 60px;
 }
 
 .aboutme .card-works b {
@@ -860,7 +860,7 @@ footer {
     color: #172b4d;
     border-radius: 0 150px 0 0;
   }
-  
+
   .aboutme .card-works {
     padding: 0 80px;
     display: flex;
