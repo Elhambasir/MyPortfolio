@@ -65,7 +65,57 @@ header > * {
 header .logo {
   text-align: left;
   margin-left: 25px;
+}
+
+.card-works a {
+  width: fit-content;
   color: #6070ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  margin: 0 0 0 10px;
+}
+
+.headline a {
+  width: fit-content;
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  margin: 0 0 0 10px;
+}
+
+.logo a {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.collapse-button a {
+  text-align: right;
+  color: #6070ff;
+}
+
+header .logo a {
+  color: #6070ff;
+  transition-duration: 1000ms;
+  transition-property: font-size, transform;
+  transition-timing-function: linear;
+  transition-delay: 100ms;
+  width: fit-content;
+  font-weight: bold;
+}
+
+.social-media ul li a {
+  color: #505f79;
+  width: fit-content;
+  margin: 0 0 0 10px;
+}
+
+header .logo a:hover {
+  font-size: 14px;
+  transform: rotate(180deg);
 }
 
 .toolbar {
@@ -90,29 +140,8 @@ header .logo {
   padding-right: 15px;
 }
 
-.card-works a,
-.headline a {
-  width: fit-content;
-  color: #6070ff;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: left;
-  margin: 0 0 0 10px;
-}
-
 .toolbar ul li b {
   color: #344563;
-}
-
-.logo a {
-  text-align: left;
-  margin-left: 10px;
-}
-
-.collapse-button a {
-  text-align: right;
-  color: #6070ff;
 }
 
 .headline {
@@ -166,12 +195,6 @@ header .logo {
 
 .social-media ul li {
   flex: 1;
-}
-
-.social-media ul li a {
-  color: #505f79;
-  width: fit-content;
-  margin: 0 0 0 10px;
 }
 
 .menu {
@@ -296,11 +319,11 @@ header .logo {
 }
 
 .project-info button:hover {
-  background-color: #6070ff;
   color: white;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   cursor: pointer;
+  background-color: #6070ff;
 }
 
 /* ///////////about me ///////// */
@@ -510,6 +533,18 @@ footer {
   text-align: center;
   color: white;
   padding: 20px;
+}
+
+/* ///////////////////////TRANSITATION//////////////// */
+
+.box {
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #00f;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
 /* ////////////////////////MEDIA QUERY/////////////////// */
