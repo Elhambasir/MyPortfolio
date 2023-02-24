@@ -186,6 +186,7 @@ header .logo {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  background-color: #e5e5e5;
 }
 
 .card-works {
@@ -220,11 +221,18 @@ header .logo {
   line-height: 44px;
 }
 
-.project-info .label,
-.project-info .tags {
+.project-info .label {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: flex-start;
+}
+
+.project-info .tags {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  float: left;
   justify-content: flex-start;
 }
 
@@ -243,6 +251,7 @@ header .logo {
 
 .project-info .tags li {
   margin: 0 5px;
+  display: inline-block;
 }
 
 .aboutme .card-works ul li {
@@ -276,6 +285,7 @@ header .logo {
   width: fit-content !important;
   border-radius: 5px;
   color: #6070ff;
+  margin-top: 15px;
 }
 
 /* ///////////about me ///////// */
