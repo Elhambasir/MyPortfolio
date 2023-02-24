@@ -68,6 +68,51 @@ header .logo {
   color: #6070ff;
 }
 
+.card-works a {
+  width: fit-content;
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  margin: 0 0 0 10px;
+}
+
+.headline a {
+  width: fit-content;
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  margin: 0 0 0 10px;
+}
+
+.logo a {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.collapse-button a {
+  text-align: right;
+  color: #6070ff;
+}
+
+header .logo a {
+  color: #6070ff;
+  font-weight: bold;
+  width: fit-content;
+  animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+@keyframes slideInLeft {
+  0% { transform: rotate(45deg); }
+  25% { transform: rotate(90deg); }
+  50% { transform: rotate(180deg); }
+  75% { transform: rotate(270deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .toolbar {
   color: #6070ff;
   display: flex;
@@ -90,29 +135,8 @@ header .logo {
   padding-right: 15px;
 }
 
-.card-works a,
-.headline a {
-  width: fit-content;
-  color: #6070ff;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: left;
-  margin: 0 0 0 10px;
-}
-
 .toolbar ul li b {
   color: #344563;
-}
-
-.logo a {
-  text-align: left;
-  margin-left: 10px;
-}
-
-.collapse-button a {
-  text-align: right;
-  color: #6070ff;
 }
 
 .headline {
@@ -205,11 +229,18 @@ header .logo {
   width: 90%;
   height: fit-content;
   margin-top: 10px;
+  transition-property: width, height;
+  transition-duration: 1000ms;
+  transition-timing-function: linear;
 }
 
 .card-works img {
   width: 100%;
   height: auto;
+}
+
+.card-works .image-cover:hover {
+  width: 100%;
 }
 
 .project-info {
@@ -281,6 +312,17 @@ header .logo {
   border-radius: 5px;
   color: #6070ff;
   background-color: white;
+  transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.project-info button:hover {
+  color: yellow;
+  background-color: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .aboutme .card-works {
@@ -292,14 +334,6 @@ header .logo {
 .projects .card-works:hover {
   box-shadow: 0 8px 16px rgba(190, 196, 248, 0.24);
   border: 1px solid #6070ff;
-  cursor: pointer;
-}
-
-.project-info button:hover {
-  background-color: #6070ff;
-  color: white;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-  border-radius: 8px;
   cursor: pointer;
 }
 
@@ -409,13 +443,18 @@ header .logo {
   font-size: 15px;
   border-radius: 7px;
   padding: 10px 10px;
+  transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: linear;
 }
 
 .aboutme .card-works .contacts button:hover {
   background-color: #6070ff;
-  color: white;
+
+  /* color: white; */
   cursor: pointer;
   box-shadow: 1px 2px 3px 0.8px #5d6a80;
+  color: yellow;
 }
 
 .aboutme .card-works button span {
@@ -441,6 +480,12 @@ header .logo {
 
 footer {
   background-color: white;
+}
+
+.contactme p {
+  transition-property: transform;
+  transition-timing-function: linear;
+  transition-duration: 1000ms;
 }
 
 .contactme div p {
@@ -473,15 +518,18 @@ footer {
   width: fit-content;
   float: left;
   padding: 0 10px;
+  transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
 }
 
 .contactme form input:last-child:hover {
   cursor: pointer;
   background-color: #6070ff;
-  color: white;
   box-shadow: 1px;
   border: 1px solid white;
   font-weight: bolder;
+  color: yellow;
 }
 
 .fa-brands {
@@ -503,6 +551,10 @@ footer {
 
 .contactme form {
   width: 100%;
+}
+
+.contactme p:hover {
+  transform: translateX(100px);
 }
 
 .contactme div {
