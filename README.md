@@ -80,6 +80,7 @@ To run tests, run the following command: In visual studio code with live server 
 ### Deployment
 
 ## 🚀 Live Demo <a name="Live Demo"></a>
+
 [Live Demo Link](https://elhambasir.github.io/MyPortfolio/)
 
 <!-- AUTHORS -->
