@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elham's Portfolio</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
@@ -21,7 +21,7 @@
                 </div>
                 <nav class="toolbar">
                     <ul>
-                        <li class="collapse-button"><i class="fa fa-list"></i></li>
+                        <li class="collapse-button"><a href="#"><span class="fa fa-list"></span></a></li>
                         <li class="menu">
                             <span>
                                 <ul>
@@ -47,16 +47,16 @@
                     <a href="#">LET'S CONNECT</a>
                     <div class="social-media">
                         <ul>
-                            <li><a href="#"><img width="14px" height="15px" alt="Contact me on Twitter" src="./assets/icons/bluTwitter.png"
-                                        ></a></li>
-                            <li><a href="#"><img width="14px" height="15px" alt="Contact me on Linkedin" src="./assets/icons/Linkedin-icon.png"
-                                        ></a></li>
-                            <li><a href="#"><img width="14px" height="15px" alt="Contact me on BluM" src="./assets/icons/BluM.png"
-                                        ></a></li>
-                            <li><a href="#"><img width="14px" height="15px" alt="Contact me on BluGit" src="./assets/icons/BluGit.png"
-                                        ></a></li>
-                            <li><a href="#"><img width="14px" height="15px" alt="BluVector" src="./assets/icons/BluVector.png"
-                                        ></a></li>
+                            <li><a href=""><img width="14px" height="15px" src="./assets/icons/bluTwitter.png"
+                                        alt="not found"></a></li>
+                            <li><a href=""><img width="14px" height="15px" src="./assets/icons/Linkedin-icon.png"
+                                        alt="not found"></a></li>
+                            <li><a href=""><img width="14px" height="15px" src="./assets/icons/BluM.png"
+                                        alt="not found"></a></li>
+                            <li><a href=""><img width="14px" height="15px" src="./assets/icons/BluGit.png"
+                                        alt="not found"></a></li>
+                            <li><a href=""><img width="14px" height="15px" src="./assets/icons/BluVector.png"
+                                        alt="not found"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
         <section class="projects">
             <div class="card-works">
                 <div class="image-cover order-1">
-                    <img src="./assets/images/Snapshoot Portfolio.png" alt="Click to see the project-1">
+                    <img src="./assets/images/Snapshoot Portfolio.png" alt="">
                 </div>
                 <div class="project-info">
                     <h1>Tonic</h1>
@@ -89,7 +89,7 @@
 
             <div class="card-works">
                 <div class="image-cover order-1">
-                    <img src="./assets/images/1.png" alt="Click to see the project">
+                    <img src="./assets/images/1.png" alt="">
                 </div>
                 <div class="project-info">
                     <h1>Tonic</h1>
@@ -112,7 +112,7 @@
 
             <div class="card-works">
                 <div class="image-cover order-2">
-                    <img src="./assets/images/2.png" alt="Click to see the project-2">
+                    <img src="./assets/images/2.png" alt="">
                 </div>
                 <div class="project-info">
                     <h1>Tonic</h1>
@@ -135,7 +135,7 @@
 
             <div class="card-works">
                 <div class="image-cover order-1">
-                    <img src="./assets/images/3.png" alt="Click to see the project-3">
+                    <img src="./assets/images/3.png" alt="">
                 </div>
                 <div class="project-info">
                     <h1>Tonic</h1>
@@ -171,15 +171,15 @@
                     <div class="contacts">
                         <ul>
                             <li><a href=""><img width="20px" height="16px" src="./assets/icons/bluTwitter.png"
-                                        alt="Contact me on my Twitter"></a></li>
+                                        alt="not found"></a></li>
                             <li><a href=""><img width="20px" height="16px" src="./assets/icons/Linkedin-icon.png"
-                                        alt="Contact me on Linkedin"></a></li>
+                                        alt="not found"></a></li>
                             <li><a href=""><img width="20px" height="16px" src="./assets/icons/BluM.png"
-                                        alt="Contact me on BluM"></a></li>
+                                        alt="not found"></a></li>
                             <li><a href=""><img width="20px" height="16px" src="./assets/icons/BluGit.png"
-                                        alt="Contact me on BluGit"></a></li>
+                                        alt="not found"></a></li>
                             <li><a href=""><img width="20px" height="16px" src="./assets/icons/BluVector.png"
-                                        alt="Contact me on BluVector"></a></li>
+                                        alt="not found"></a></li>
                         </ul>
                         <p><button>Get my resume</button></p>
                     </div>
@@ -212,11 +212,14 @@
                         project that needs coding. I’d love to help with it
                     </p>
                     <form action="https://formspree.io/f/xyyawpdk" method="post">
-                        <input type="text" name="name" required placeholder="Your name..." id="name" maxlength="30">
-                        <input type="email" name="email" required id="email" placeholder="Your email...">
-                        <textarea name="comment" id="comment" required cols="30" rows="10" placeholder="Your comments..."
+                       <label for="name">Name</label>
+                        <input type="text" name="name" required placeholder="Your name..." id="" maxlength="30">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" required id="" placeholder="Your email...">
+                        <label for="comment">Comment</label>
+                        <textarea name="comment" id="" required cols="30" rows="10" placeholder="Your comments..."
                             maxlength="500"></textarea>
-                        <input type="submit" value="Get in touch">
+                         <input type="submit" value="Get in touch">   
                     </form>
                 </div>
             </section>
