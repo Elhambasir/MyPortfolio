@@ -70,7 +70,7 @@ header .logo {
 
 .card-works a {
   width: fit-content;
-  color: #142cff;
+  color: #0013c2;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -95,11 +95,11 @@ header .logo {
 
 .collapse-button a {
   text-align: right;
-  color: #142cff;
+  color: #0013c2;
 }
 
 header .logo a {
-  color: #142cff;
+  color: #0013c2;
   font-weight: bold;
   width: fit-content;
   animation: 1s ease-out 0s 1 slideInLeft;
@@ -114,7 +114,7 @@ header .logo a {
 }
 
 .toolbar {
-  color: #142cff;
+  color: #0013c2;
   display: flex;
 }
 
@@ -333,7 +333,7 @@ header .logo a {
 
 .projects .card-works:hover {
   box-shadow: 0 8px 16px rgba(190, 196, 248, 0.24);
-  border: 1px solid #142cff;
+  border: 1px solid #0013c2;
   cursor: pointer;
 }
 
@@ -353,7 +353,7 @@ header .logo a {
 }
 
 .aboutme .card-works b {
-  color: #142cff;
+  color: #0013c2;
   margin-bottom: 5px;
   font-size: 12px;
 }
@@ -437,9 +437,9 @@ header .logo a {
 .aboutme .card-works .contacts button {
   width: fit-content;
   height: fit-content;
-  border: 1px solid #142cff;
+  border: 1px solid #0013c2;
   background-color: white;
-  color: #142cff;
+  color: #0013c2;
   font-size: 15px;
   border-radius: 7px;
   padding: 10px 10px;
@@ -449,7 +449,7 @@ header .logo a {
 }
 
 .aboutme .card-works .contacts button:hover {
-  background-color: #142cff;
+  background-color: #0013c2;
 
   /* color: white; */
   cursor: pointer;
@@ -466,7 +466,7 @@ header .logo a {
   background-image: url(./assets/images/header-shape-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #142cff;
+  background-color: #0013c2;
   color: white;
   display: flex;
   width: 100%;
@@ -511,7 +511,7 @@ footer {
   border: none;
   padding-left: 2%;
   border-radius: 5px;
-  color: #142cff;
+  color: #0013c2;
 }
 
 .contactme form input:last-child {
@@ -525,7 +525,7 @@ footer {
 
 .contactme form input:last-child:hover {
   cursor: pointer;
-  background-color: #142cff;
+  background-color: #0013c2;
   box-shadow: 1px;
   border: 1px solid white;
   font-weight: bolder;
@@ -785,7 +785,7 @@ footer {
     background-image: url(./assets/images/contact_form_bg_shapes.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #142cff;
+    background-color: #0013c2;
     color: white;
     display: flex;
     width: 100%;
@@ -1006,7 +1006,7 @@ footer {
     background-image: url(./assets/images/contact_form_bg_shapes.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: #142cff;
+    background-color: #0013c2;
     color: white;
     display: flex;
     width: 100%;
