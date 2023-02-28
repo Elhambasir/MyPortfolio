@@ -65,12 +65,12 @@ header > * {
 header .logo {
   text-align: left;
   margin-left: 25px;
-  color: #6070ff;
+  color: #0a23ff;
 }
 
 .card-works a {
   width: fit-content;
-  color: #6070ff;
+  color: #142cff;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -80,7 +80,7 @@ header .logo {
 
 .headline a {
   width: fit-content;
-  color: #6070ff;
+  color: #0f27ff;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -95,11 +95,11 @@ header .logo {
 
 .collapse-button a {
   text-align: right;
-  color: #6070ff;
+  color: #142cff;
 }
 
 header .logo a {
-  color: #6070ff;
+  color: #142cff;
   font-weight: bold;
   width: fit-content;
   animation: 1s ease-out 0s 1 slideInLeft;
@@ -114,7 +114,7 @@ header .logo a {
 }
 
 .toolbar {
-  color: #6070ff;
+  color: #142cff;
   display: flex;
 }
 
@@ -266,7 +266,7 @@ header .logo a {
 .project-info .label li {
   flex: 1;
   list-style: disc;
-  color: gray;
+  color: #575757;
   text-align: left;
   margin: 0 10px;
   padding: 0;
@@ -297,7 +297,7 @@ header .logo a {
   background-color: #ebebff;
   padding: 2px 6px;
   border-radius: 5px;
-  color: #6070ff;
+  color: #0017eb;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -307,10 +307,10 @@ header .logo a {
 
 .project-info button {
   padding: 7px 10px;
-  border: 1px solid #6070ff !important;
+  border: 1px solid #0f27ff !important;
   width: fit-content !important;
   border-radius: 5px;
-  color: #6070ff;
+  color: #0f27ff;
   background-color: white;
   transition-property: color;
   transition-duration: 1s;
@@ -319,7 +319,7 @@ header .logo a {
 
 .project-info button:hover {
   color: yellow;
-  background-color: #6070ff;
+  background-color: #0f27ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   cursor: pointer;
@@ -333,7 +333,7 @@ header .logo a {
 
 .projects .card-works:hover {
   box-shadow: 0 8px 16px rgba(190, 196, 248, 0.24);
-  border: 1px solid #6070ff;
+  border: 1px solid #142cff;
   cursor: pointer;
 }
 
@@ -353,7 +353,7 @@ header .logo a {
 }
 
 .aboutme .card-works b {
-  color: #6070ff;
+  color: #142cff;
   margin-bottom: 5px;
   font-size: 12px;
 }
@@ -437,9 +437,9 @@ header .logo a {
 .aboutme .card-works .contacts button {
   width: fit-content;
   height: fit-content;
-  border: 1px solid #6070ff;
+  border: 1px solid #142cff;
   background-color: white;
-  color: #6070ff;
+  color: #142cff;
   font-size: 15px;
   border-radius: 7px;
   padding: 10px 10px;
@@ -449,7 +449,7 @@ header .logo a {
 }
 
 .aboutme .card-works .contacts button:hover {
-  background-color: #6070ff;
+  background-color: #142cff;
 
   /* color: white; */
   cursor: pointer;
@@ -466,7 +466,7 @@ header .logo a {
   background-image: url(./assets/images/header-shape-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #6070ff;
+  background-color: #142cff;
   color: white;
   display: flex;
   width: 100%;
@@ -511,7 +511,7 @@ footer {
   border: none;
   padding-left: 2%;
   border-radius: 5px;
-  color: #6070ff;
+  color: #142cff;
 }
 
 .contactme form input:last-child {
@@ -525,7 +525,7 @@ footer {
 
 .contactme form input:last-child:hover {
   cursor: pointer;
-  background-color: #6070ff;
+  background-color: #142cff;
   box-shadow: 1px;
   border: 1px solid white;
   font-weight: bolder;
@@ -785,7 +785,7 @@ footer {
     background-image: url(./assets/images/contact_form_bg_shapes.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #6070ff;
+    background-color: #142cff;
     color: white;
     display: flex;
     width: 100%;
@@ -1005,7 +1005,7 @@ footer {
     background-image: url(./assets/images/contact_form_bg_shapes.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: #6070ff;
+    background-color: #142cff;
     color: white;
     display: flex;
     width: 100%;
