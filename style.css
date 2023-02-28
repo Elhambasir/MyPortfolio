@@ -65,7 +65,7 @@ header > * {
 header .logo {
   text-align: left;
   margin-left: 25px;
-  color: #0f2Bff;
+  color: #0f2bff;
 }
 
 .card-works a {
@@ -1036,4 +1036,6 @@ footer {
   .contactme form input:last-child {
     float: none;
   }
+
+  /* ////end//// */
 }

@@ -107,8 +107,7 @@ To run tests, run the following command: In visual studio code with live server 
 <!-- CONTRIBUTING -->
 ## Contributions
 
-Contributions, issues, and feature requests are welcome!
-
+*GitHub: [kayembajonathan]((https://github.com/KAYEMBAJONATHAN)
 
 Feel free to check the [issues page](../../issues/).
 
