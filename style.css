@@ -144,6 +144,22 @@ header .logo a:hover {
   color: #344563;
 }
 
+.toolbar {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 250px;
+  float: left;
+  display: none;
+  background-color: gray;
+  border: 1px solid red;
+}
+
+.toolbar .display {
+  display: block;
+}
+
 .headline {
   background-image: url(./assets/images/header-shape-mobile.png);
   background-repeat: no-repeat;
@@ -195,10 +211,6 @@ header .logo a:hover {
 
 .social-media ul li {
   flex: 1;
-}
-
-.menu {
-  display: none;
 }
 
 .content {
@@ -567,6 +579,10 @@ footer {
     flex: 1;
     padding: 10px 0;
   }
+
+  /* .display {
+    display: block;
+  } */
 
   .headline {
     background-image: url(./assets/images/bg_header_shape_desktop_version.png);
