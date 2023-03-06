@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
-        
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -22,15 +22,10 @@
                 </div>
                 <nav class="toolbar">
                     <ul>
-                        <li>
-                            <span>
-                                <ul>
-                                    <li><a href="#"><b>Portfolio</b></a></li>
-                                    <li><a href="#"><b>About</b></a></li>
-                                    <li><a href="#"><b>Contact</b></a></li>
-                                </ul>
-                            </span>
-                        </li>
+                        <li><a href="#" class="btn-close"><i class="fa fa-close"></i></a></li>
+                        <li><a class="btn-menu-item1" href="#portfolio">Portfolio</a></li>
+                        <li><a class="btn-menu-item2" href="#about">About</a></li>
+                        <li><a class="btn-menu-item3" href="#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="collapse-button">
@@ -66,7 +61,7 @@
             </div>
             <!-- //////////END HEADLINE////////// -->
         </section>
-        <section class="projects">
+        <section class="projects" id="portfolio">
             <div class="card-works">
                 <div class="image-cover order-1">
                     <img src="./assets/images/Snapshoot Portfolio.png" alt="">
@@ -82,9 +77,9 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti et id alias cumque ducimus
                         quasi</p>
                     <ul class="tags">
-                        <li><a href="">html</a></li>
-                        <li><a href="">css</a></li>
-                        <li><a href="">ruby</a></li>
+                        <li><a href="#">html</a></li>
+                        <li><a href="#">css</a></li>
+                        <li><a href="#">ruby</a></li>
                     </ul>
                     <p><button>See Projects</button></p>
                 </div>
@@ -160,7 +155,7 @@
             </div>
         </section>
         <!-- //////////END PROJECTS////////// -->
-        <section class="aboutme">
+        <section class="aboutme" id="about">
             <div class="card-works">
                 <div class="about">
                     <h1>About Myself</h1>
@@ -207,7 +202,7 @@
         </section>
         <!-- //////////END ABOUTME////////// -->
         <footer>
-            <section class="contactme">
+            <section class="contactme" id="contact">
                 <div>
                     <h1>Contact me</h1>
                     <p>

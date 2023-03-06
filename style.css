@@ -55,7 +55,7 @@ header > * {
 }
 
 .logo {
-  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  flex: 2;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -92,9 +92,20 @@ header .logo {
   margin-left: 10px;
 }
 
+.collapse-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .collapse-button a {
-  text-align: right;
+  display: block;
+  width: 50%;
+  padding: 10px 0;
+  text-align: center;
   color: #6070ff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
 }
 
 header .logo a {
@@ -113,6 +124,25 @@ header .logo a {
   margin: 0 0 0 10px;
 }
 
+.toolbar ul li a {
+  color: #344563;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  margin: auto 5px;
+}
+
+.display ul li a {
+  text-align: left;
+  margin-left: 25px;
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
 header .logo a:hover {
   font-size: 14px;
   transform: rotate(180deg);
@@ -120,7 +150,10 @@ header .logo a:hover {
 
 .toolbar {
   color: #6070ff;
-  display: flex;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  display: none;
 }
 
 .toolbar ul {
@@ -132,31 +165,39 @@ header .logo a:hover {
   justify-content: space-between;
 }
 
-.toolbar ul li {
-  flex: 1;
-  align-self: center;
-  text-align: center;
-  padding-left: 15px;
+.toolbar ul li a.btn-close {
+  display: none;
+}
+
+.display {
+  width: 100%;
+  height: 100%;
+  float: left;
+  display: flex;
+  background-color: #6070ff;
+  margin-top: 0;
+  position: absolute;
+  left: 0;
+  opacity: 0.9;
+}
+
+.display.toolbar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.display ul li {
+  width: 80%;
+  text-align: left;
+  padding-left: 10px;
   padding-right: 15px;
 }
 
-.toolbar ul li b {
-  color: #344563;
-}
-
-.toolbar {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 250px;
-  float: left;
-  display: none;
-  background-color: gray;
-  border: 1px solid red;
-}
-
-.toolbar .display {
+.display ul li a.btn-close {
+  text-align: right;
   display: block;
 }
 
@@ -175,6 +216,11 @@ header .logo a:hover {
   border-radius: 0 0 0 50px;
 }
 
+/* .position {
+  position: relative;
+  top: 35%;
+  padding: 20px;
+} */
 .headline h1 {
   width: fit-content;
   padding: 10px;
@@ -214,8 +260,7 @@ header .logo a:hover {
 }
 
 .content {
-  position: relative;
-  top: 10%;
+  margin-top: 10%;
   padding: 20px;
 }
 
@@ -575,14 +620,14 @@ footer {
     justify-content: flex-start;
   }
 
+  .toolbar {
+    display: block;
+  }
+
   header .toolbar {
     flex: 1;
     padding: 10px 0;
   }
-
-  /* .display {
-    display: block;
-  } */
 
   .headline {
     background-image: url(./assets/images/bg_header_shape_desktop_version.png);
