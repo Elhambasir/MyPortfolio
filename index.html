@@ -26,6 +26,16 @@
                         <li><a class="btn-menu-item1" href="#portfolio">Portfolio</a></li>
                         <li><a class="btn-menu-item2" href="#about">About</a></li>
                         <li><a class="btn-menu-item3" href="#contact">Contact</a></li>
+                        <li class="collapse-button"><i class="fa fa-list"></i></li>
+                        <li class="menu">
+                            <span>
+                                <ul>
+                                    <li><a href="#"><b>Portfolio</b></a></li>
+                                    <li><a href="#"><b>About</b></a></li>
+                                    <li><a href="#"><b>Contact</b></a></li>
+                                </ul>
+                            </span>
+                        </li>
                     </ul>
                 </nav>
                 <div class="collapse-button">
@@ -46,15 +56,15 @@
                     <div class="social-media">
                         <ul>
                             <li><a href=""><img width="14px" height="15px" src="./assets/icons/bluTwitter.png"
-                                        alt="not found"></a></li>
+                                        alt="Contact me via Twitter"></a></li>
                             <li><a href=""><img width="14px" height="15px" src="./assets/icons/Linkedin-icon.png"
-                                        alt="not found"></a></li>
+                                        alt="Contact me via Linkedin"></a></li>
                             <li><a href=""><img width="14px" height="15px" src="./assets/icons/BluM.png"
-                                        alt="not found"></a></li>
+                                        alt="Contact me"></a></li>
                             <li><a href=""><img width="14px" height="15px" src="./assets/icons/BluGit.png"
-                                        alt="not found"></a></li>
+                                        alt="My GitGub"></a></li>
                             <li><a href=""><img width="14px" height="15px" src="./assets/icons/BluVector.png"
-                                        alt="not found"></a></li>
+                                        alt="Contact me via this link"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -64,7 +74,7 @@
         <section class="projects" id="portfolio">
             <div class="card-works">
                 <div class="image-cover order-1">
-                    <img src="./assets/images/Snapshoot Portfolio.png" alt="">
+                    <img src="./assets/images/Snapshoot Portfolio.png" alt="Project-1">
                 </div>
                 <div class="project-info">
                     <h1>Tonic</h1>
@@ -87,7 +97,7 @@
 
             <div class="card-works">
                 <div class="image-cover order-1">
-                    <img src="./assets/images/1.png" alt="">
+                    <img src="./assets/images/1.png" alt="Project-2">
                 </div>
                 <div class="project-info">
                     <h1>Tonic</h1>
@@ -110,7 +120,7 @@
 
             <div class="card-works">
                 <div class="image-cover order-2">
-                    <img src="./assets/images/2.png" alt="">
+                    <img src="./assets/images/2.png" alt="Project-3">
                 </div>
                 <div class="project-info">
                     <h1>Tonic</h1>
@@ -133,7 +143,7 @@
 
             <div class="card-works">
                 <div class="image-cover order-1">
-                    <img src="./assets/images/3.png" alt="">
+                    <img src="./assets/images/3.png" alt="Project-4">
                 </div>
                 <div class="project-info">
                     <h1>Tonic</h1>
@@ -169,15 +179,15 @@
                     <div class="contacts">
                         <ul>
                             <li><a href=""><img width="20px" height="16px" src="./assets/icons/bluTwitter.png"
-                                        alt="not found"></a></li>
+                                        alt="Contact me on Twitter"></a></li>
                             <li><a href=""><img width="20px" height="16px" src="./assets/icons/Linkedin-icon.png"
-                                        alt="not found"></a></li>
+                                        alt="Contact me on Linkedin"></a></li>
                             <li><a href=""><img width="20px" height="16px" src="./assets/icons/BluM.png"
-                                        alt="not found"></a></li>
+                                        alt="Contact me via this"></a></li>
                             <li><a href=""><img width="20px" height="16px" src="./assets/icons/BluGit.png"
-                                        alt="not found"></a></li>
+                                        alt="Find me on GitHub"></a></li>
                             <li><a href=""><img width="20px" height="16px" src="./assets/icons/BluVector.png"
-                                        alt="not found"></a></li>
+                                        alt="Contact me"></a></li>
                         </ul>
                         <p><button>Get my resume</button></p>
                     </div>
@@ -210,11 +220,14 @@
                         project that needs coding. I’d love to help with it
                     </p>
                     <form action="https://formspree.io/f/xyyawpdk" method="post">
-                        <input type="text" name="name" required placeholder="Your name..." id="" maxlength="30">
-                        <input type="email" name="email" required id="" placeholder="Your email...">
-                        <textarea name="comment" id="" required cols="30" rows="10" placeholder="Your comments..."
+                       <label for="name">Name</label>
+                        <input type="text" name="name" required placeholder="Your name..." id="name" maxlength="30">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" required id="email" placeholder="Your email...">
+                        <label for="comment">Comment</label>
+                        <textarea name="comment" id="comment" required cols="30" rows="10" placeholder="Your comments..."
                             maxlength="500"></textarea>
-                        <input type="submit" value="Get in touch">
+                         <input type="submit" value="Get in touch">   
                     </form>
                 </div>
             </section>

@@ -65,11 +65,13 @@ header > * {
 header .logo {
   text-align: left;
   margin-left: 25px;
+  color: #0015d1;
 }
 
 .card-works a {
   width: fit-content;
   color: #6070ff;
+  color: #051eff;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -92,7 +94,43 @@ header .logo {
   margin-left: 10px;
 }
 
-.collapse-button {
+.headline a {
+  width: fit-content;
+  color: #0f27ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  margin: 0 0 0 10px;
+}
+
+.logo a {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.collapse-button a {
+  text-align: right;
+  color: #051eff;
+}
+
+header .logo a {
+  color: #051eff;
+  font-weight: bold;
+  width: fit-content;
+  animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+@keyframes slideInLeft {
+  0% { transform: rotate(45deg); }
+  25% { transform: rotate(90deg); }
+  50% { transform: rotate(180deg); }
+  75% { transform: rotate(270deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.toolbar {
+  color: #051eff;
   display: flex;
   justify-content: flex-end;
 }
@@ -201,6 +239,10 @@ header .logo a:hover {
   display: block;
 }
 
+.toolbar ul li b {
+  color: #344563;
+}
+
 .headline {
   background-image: url(./assets/images/header-shape-mobile.png);
   background-repeat: no-repeat;
@@ -216,11 +258,6 @@ header .logo a:hover {
   border-radius: 0 0 0 50px;
 }
 
-/* .position {
-  position: relative;
-  top: 35%;
-  padding: 20px;
-} */
 .headline h1 {
   width: fit-content;
   padding: 10px;
@@ -285,11 +322,18 @@ header .logo a:hover {
   width: 90%;
   height: fit-content;
   margin-top: 10px;
+  transition-property: width, height;
+  transition-duration: 1000ms;
+  transition-timing-function: linear;
 }
 
 .card-works img {
   width: 100%;
   height: auto;
+}
+
+.card-works .image-cover:hover {
+  width: 100%;
 }
 
 .project-info {
@@ -315,7 +359,7 @@ header .logo a:hover {
 .project-info .label li {
   flex: 1;
   list-style: disc;
-  color: gray;
+  color: #525252;
   text-align: left;
   margin: 0 10px;
   padding: 0;
@@ -346,7 +390,7 @@ header .logo a:hover {
   background-color: #ebebff;
   padding: 2px 6px;
   border-radius: 5px;
-  color: #6070ff;
+  color: #0014cc;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -356,11 +400,22 @@ header .logo a:hover {
 
 .project-info button {
   padding: 7px 10px;
-  border: 1px solid #6070ff !important;
+  border: 1px solid #0f27ff !important;
   width: fit-content !important;
   border-radius: 5px;
-  color: #6070ff;
+  color: #0f27ff;
   background-color: white;
+  transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.project-info button:hover {
+  color: yellow;
+  background-color: #0f27ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .aboutme .card-works {
@@ -379,6 +434,7 @@ header .logo a:hover {
   color: white;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
+  border: 1px solid #051eff;
   cursor: pointer;
   background-color: #6070ff;
 }
@@ -399,7 +455,7 @@ header .logo a:hover {
 }
 
 .aboutme .card-works b {
-  color: #6070ff;
+  color: #051eff;
   margin-bottom: 5px;
   font-size: 12px;
 }
@@ -483,19 +539,24 @@ header .logo a:hover {
 .aboutme .card-works .contacts button {
   width: fit-content;
   height: fit-content;
-  border: 1px solid #6070ff;
+  border: 1px solid #051eff;
   background-color: white;
-  color: #6070ff;
+  color: #051eff;
   font-size: 15px;
   border-radius: 7px;
   padding: 10px 10px;
+  transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: linear;
 }
 
 .aboutme .card-works .contacts button:hover {
-  background-color: #6070ff;
-  color: white;
+  background-color: #051eff;
+
+  /* color: white; */
   cursor: pointer;
   box-shadow: 1px 2px 3px 0.8px #5d6a80;
+  color: yellow;
 }
 
 .aboutme .card-works button span {
@@ -507,7 +568,7 @@ header .logo a:hover {
   background-image: url(./assets/images/header-shape-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #6070ff;
+  background-color: #051eff;
   color: white;
   display: flex;
   width: 100%;
@@ -521,6 +582,12 @@ header .logo a:hover {
 
 footer {
   background-color: white;
+}
+
+.contactme p {
+  transition-property: transform;
+  transition-timing-function: linear;
+  transition-duration: 1000ms;
 }
 
 .contactme div p {
@@ -546,22 +613,25 @@ footer {
   border: none;
   padding-left: 2%;
   border-radius: 5px;
-  color: #6070ff;
+  color: #051eff;
 }
 
 .contactme form input:last-child {
   width: fit-content;
   float: left;
   padding: 0 10px;
+  transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
 }
 
 .contactme form input:last-child:hover {
   cursor: pointer;
-  background-color: #6070ff;
-  color: white;
+  background-color: #051eff;
   box-shadow: 1px;
   border: 1px solid white;
   font-weight: bolder;
+  color: yellow;
 }
 
 .fa-brands {
@@ -583,6 +653,10 @@ footer {
 
 .contactme form {
   width: 100%;
+}
+
+.contactme p:hover {
+  transform: translateX(100px);
 }
 
 .contactme div {
@@ -829,7 +903,7 @@ footer {
     background-image: url(./assets/images/contact_form_bg_shapes.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #6070ff;
+    background-color: #001c99;
     color: white;
     display: flex;
     width: 100%;
@@ -1044,12 +1118,13 @@ footer {
     padding: 0;
   }
 
-  /* CONTACT ME */
+  /* /////////CONTACT ME///////////  */
+
   .contactme {
     background-image: url(./assets/images/contact_form_bg_shapes.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: #6070ff;
+    background-color: #051eff;
     color: white;
     display: flex;
     width: 100%;
@@ -1080,4 +1155,6 @@ footer {
   .contactme form input:last-child {
     float: none;
   }
+
+  /* ////end//// */
 }

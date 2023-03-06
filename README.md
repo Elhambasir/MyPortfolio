@@ -79,7 +79,9 @@ To run tests, run the following command: In visual studio code with live server 
 
 ### Deployment
 
-You can deploy this project using: GitHub
+## 🚀 Live Demo <a name="Live Demo"></a>
+
+[Live Demo Link](https://elhambasir.github.io/MyPortfolio/)
 
 <!-- AUTHORS -->
 
@@ -105,8 +107,7 @@ You can deploy this project using: GitHub
 <!-- CONTRIBUTING -->
 ## Contributions
 
-Contributions, issues, and feature requests are welcome!
-
+*GitHub: [kayembajonathan]((https://github.com/KAYEMBAJONATHAN)
 
 Feel free to check the [issues page](../../issues/).
 
