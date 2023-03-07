@@ -97,7 +97,6 @@ header .logo {
 .collapse-button a {
   color: #051eff;
   display: block;
-  width: 50%;
   padding: 10px 0;
   text-align: center;
   font-size: 18px;
@@ -195,9 +194,13 @@ header .logo a:hover {
   display: flex;
   background-color: #6070ff;
   margin-top: 0;
-  position: absolute;
+  position: fixed;
   left: 0;
   opacity: 0.9;
+}
+
+.hide {
+  display: none;
 }
 
 .display.toolbar ul {
@@ -637,6 +640,17 @@ footer {
   text-align: center;
   color: white;
   padding: 20px;
+}
+
+.hidden-element {
+  border: 0;
+  clip: rect(1px 1px 1px 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 /* ///////////////////////TRANSITATION//////////////// */
