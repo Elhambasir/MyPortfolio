@@ -9,6 +9,7 @@ const btnMenuItem3 = document.querySelector('.btn-menu-item3');
 btnMenu.onclick = function show() {
   nav.classList.add('display');
   headline.classList.add('position');
+  resize();
 };
 
 btnClose.onclick = function show() {
@@ -25,8 +26,8 @@ btnMenuItem3.onclick = function show() {
 };
 
 function resize() {
-  if(window.innerWidth >= 768) {   
+  if (window.innerWidth >= 768) {
     nav.classList.remove('display');
-}
+  }
 }
 
