@@ -196,7 +196,9 @@ header .logo a:hover {
   margin-top: 0;
   position: fixed;
   left: 0;
-  opacity: 0.9;
+  opacity: 1.9;
+  backdrop-filter: blur(8px);
+  mix-blend-mode: multiply;
 }
 
 .hide {
@@ -544,7 +546,7 @@ header .logo a:hover {
   background-image: url(./assets/images/header-shape-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #051eff;
+  background-color: #6070ff;
   color: white;
   display: flex;
   width: 100%;
@@ -890,7 +892,7 @@ footer {
     background-image: url(./assets/images/contact_form_bg_shapes.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #001c99;
+    background-color: #6070ff;
     color: white;
     display: flex;
     width: 100%;
@@ -1111,7 +1113,7 @@ footer {
     background-image: url(./assets/images/contact_form_bg_shapes.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: #051eff;
+    background-color: #6070ff;
     color: white;
     display: flex;
     width: 100%;

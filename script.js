@@ -23,3 +23,10 @@ btnMenuItem2.onclick = function show() {
 btnMenuItem3.onclick = function show() {
   nav.classList.remove('display');
 };
+
+function resize() {
+  if(window.innerWidth >= 768) {   
+    nav.classList.remove('display');
+}
+}
+
