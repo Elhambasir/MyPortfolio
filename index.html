@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body>
+<body onresize="resize()" onload="resize()">
     <section class="container">
         <section class="head">
             <header>
@@ -21,18 +22,15 @@
                 </div>
                 <nav class="toolbar">
                     <ul>
-                        <li class="collapse-button"><i class="fa fa-list"></i></li>
-                        <li class="menu">
-                            <span>
-                                <ul>
-                                    <li><a href="#"><b>Portfolio</b></a></li>
-                                    <li><a href="#"><b>About</b></a></li>
-                                    <li><a href="#"><b>Contact</b></a></li>
-                                </ul>
-                            </span>
-                        </li>
+                        <li><a href="#" class="btn-close"><i class="fa fa-close"></i></a></li>
+                        <li><a class="btn-menu-item1" href="#portfolio">Portfolio</a></li>
+                        <li><a class="btn-menu-item2" href="#about">About</a></li>
+                        <li><a class="btn-menu-item3" href="#contact">Contact</a></li>
                     </ul>
                 </nav>
+                <div class="collapse-button">
+                    <a href="#" class="btn-menu"><img src="./assets/icons/Union.png" width="18px" height="12px" alt="menu"></a>
+                </div>
             </header>
             <!-- //////////END HEADER////////// -->
             <div class="headline">
@@ -63,7 +61,7 @@
             </div>
             <!-- //////////END HEADLINE////////// -->
         </section>
-        <section class="projects">
+        <section class="projects" id="portfolio">
             <div class="card-works">
                 <div class="image-cover order-1">
                     <img src="./assets/images/Snapshoot Portfolio.png" alt="Project-1">
@@ -79,9 +77,9 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti et id alias cumque ducimus
                         quasi</p>
                     <ul class="tags">
-                        <li><a href="">html</a></li>
-                        <li><a href="">css</a></li>
-                        <li><a href="">ruby</a></li>
+                        <li><a href="#">html</a></li>
+                        <li><a href="#">css</a></li>
+                        <li><a href="#">ruby</a></li>
                     </ul>
                     <p><button>See Projects</button></p>
                 </div>
@@ -157,7 +155,7 @@
             </div>
         </section>
         <!-- //////////END PROJECTS////////// -->
-        <section class="aboutme">
+        <section class="aboutme" id="about">
             <div class="card-works">
                 <div class="about">
                     <h1>About Myself</h1>
@@ -204,7 +202,7 @@
         </section>
         <!-- //////////END ABOUTME////////// -->
         <footer>
-            <section class="contactme">
+            <section class="contactme" id="contact">
                 <div>
                     <h1>Contact me</h1>
                     <p>
@@ -212,11 +210,11 @@
                         project that needs coding. I’d love to help with it
                     </p>
                     <form action="https://formspree.io/f/xyyawpdk" method="post">
-                       <label for="name">Name</label>
+                       <label class="hidden-element" for="name">Name</label>
                         <input type="text" name="name" required placeholder="Your name..." id="name" maxlength="30">
-                        <label for="email">Email</label>
+                        <label class="hidden-element" for="email">Email</label>
                         <input type="email" name="email" required id="email" placeholder="Your email...">
-                        <label for="comment">Comment</label>
+                        <label class="hidden-element" for="comment">Comment</label>
                         <textarea name="comment" id="comment" required cols="30" rows="10" placeholder="Your comments..."
                             maxlength="500"></textarea>
                          <input type="submit" value="Get in touch">   
@@ -226,6 +224,7 @@
         </footer>
         <!-- //////////END FOOTER////////// -->
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
