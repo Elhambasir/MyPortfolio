@@ -94,66 +94,55 @@ header .logo {
   margin-left: 10px;
 }
 
-.headline a {
-  width: fit-content;
-  color: #0f27ff;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: left;
-  margin: 0 0 0 10px;
-}
-
-.logo a {
-  text-align: left;
-  margin-left: 10px;
-}
-
 .collapse-button a {
-  text-align: right;
   color: #051eff;
-}
-
-header .logo a {
-  color: #051eff;
-  font-weight: bold;
-  width: fit-content;
-  animation: 1s ease-out 0s 1 slideInLeft;
-}
-
-@keyframes slideInLeft {
-  0% { transform: rotate(45deg); }
-  25% { transform: rotate(90deg); }
-  50% { transform: rotate(180deg); }
-  75% { transform: rotate(270deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.toolbar {
-  color: #051eff;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.collapse-button a {
   display: block;
   width: 50%;
   padding: 10px 0;
   text-align: center;
-  color: #6070ff;
   font-size: 18px;
   font-weight: bold;
   margin-right: 10px;
 }
 
 header .logo a {
-  color: #6070ff;
+  color: #051eff;
   transition-duration: 1000ms;
   transition-property: font-size, transform;
   transition-timing-function: linear;
   transition-delay: 100ms;
   width: fit-content;
   font-weight: bold;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: rotate(45deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.toolbar {
+  color: #051eff;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  display: none;
 }
 
 .social-media ul li a {
@@ -184,14 +173,6 @@ header .logo a {
 header .logo a:hover {
   font-size: 14px;
   transform: rotate(180deg);
-}
-
-.toolbar {
-  color: #6070ff;
-  transition-property: all;
-  transition-duration: 1s;
-  transition-timing-function: ease-in-out;
-  display: none;
 }
 
 .toolbar ul {
@@ -410,14 +391,6 @@ header .logo a:hover {
   transition-timing-function: linear;
 }
 
-.project-info button:hover {
-  color: yellow;
-  background-color: #0f27ff;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-  border-radius: 8px;
-  cursor: pointer;
-}
-
 .aboutme .card-works {
   align-items: flex-start;
   margin: 40px 20px 20px 20px;
@@ -431,12 +404,12 @@ header .logo a:hover {
 }
 
 .project-info button:hover {
-  color: white;
+  border: 1px solid #051eff;
+  color: yellow;
+  background-color: #0f27ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
-  border: 1px solid #051eff;
   cursor: pointer;
-  background-color: #6070ff;
 }
 
 /* ///////////about me ///////// */

@@ -1,6 +1,6 @@
 const nav = document.querySelector('.toolbar');
 const headline = document.querySelector('.headline');
-const btnMenu = document.querySelector('.btn-menu')
+const btnMenu = document.querySelector('.btn-menu');
 const btnClose = document.querySelector('.btn-close');
 const btnMenuItem1 = document.querySelector('.btn-menu-item1');
 const btnMenuItem2 = document.querySelector('.btn-menu-item2');
@@ -14,12 +14,12 @@ btnMenu.onclick = function show() {
 btnClose.onclick = function show() {
   nav.classList.remove('display');
 };
-btnMenu_item1.onclick = function show() {
+btnMenuItem1.onclick = function show() {
   nav.classList.remove('display');
 };
-btnMenu_item2.onclick = function show() {
+btnMenuItem2.onclick = function show() {
   nav.classList.remove('display');
 };
-btnMenu_item3.onclick = function show() {
+btnMenuItem3.onclick = function show() {
   nav.classList.remove('display');
 };
