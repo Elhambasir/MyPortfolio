@@ -6,6 +6,12 @@ const btnMenuItem1 = document.querySelector('.btn-menu-item1');
 const btnMenuItem2 = document.querySelector('.btn-menu-item2');
 const btnMenuItem3 = document.querySelector('.btn-menu-item3');
 
+function resize() {
+  if (window.innerWidth >= 768) {
+    nav.classList.remove('display');
+  }
+}
+
 btnMenu.onclick = function show() {
   nav.classList.add('display');
   headline.classList.add('position');
@@ -24,10 +30,3 @@ btnMenuItem2.onclick = function show() {
 btnMenuItem3.onclick = function show() {
   nav.classList.remove('display');
 };
-
-function resize() {
-  if (window.innerWidth >= 768) {
-    nav.classList.remove('display');
-  }
-}
-
