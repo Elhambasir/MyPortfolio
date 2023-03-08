@@ -119,21 +119,18 @@ projectInfo.forEach((element, index) => {
     let popup_card = document.querySelector('#detail');
     projectInfo.forEach((item, index) => {
       if (item.title === btn.parentNode.parentElement.firstChild.textContent) {
-        popup_card.children[0].children[0].children[0].innerHTML = item.title;
+        popup_card.children[1].children[0].children[0].innerHTML = item.title;
 
-        let counterImg = document.createElement('img');
-        counterImg.src = "./assets/icons/Counter.png";
+        popup_card.children[1].children[1].children[0].innerHTML = item.labels[0];
+        popup_card.children[1].children[1].children[1].children[1].innerHTML = item.labels[1];
+        popup_card.children[1].children[1].children[2].children[1].innerHTML = item.labels[2];
 
-        popup_card.children[0].children[1].children[0].innerHTML = item.labels[0];
-        popup_card.children[0].children[1].children[1].innerHTML = item.labels[1];
-        popup_card.children[0].children[1].children[2].innerHTML = item.labels[2];
+        popup_card.children[1].children[2].children[0].src = item.img;
 
-        popup_card.children[0].children[2].children[0].src = item.img;
-
-        popup_card.children[0].children[3].children[0].innerHTML = item.description;
-        popup_card.children[0].children[3].children[1].children[0].children[0].innerHTML = item.tags[0];
-        popup_card.children[0].children[3].children[1].children[0].children[1].innerHTML = item.tags[1];
-        popup_card.children[0].children[3].children[1].children[0].children[2].innerHTML = item.tags[2];
+        popup_card.children[1].children[3].children[0].innerHTML = item.description;
+        popup_card.children[1].children[3].children[1].children[0].children[0].innerHTML = item.tags[0];
+        popup_card.children[1].children[3].children[1].children[0].children[1].innerHTML = item.tags[1];
+        popup_card.children[1].children[3].children[1].children[0].children[2].innerHTML = item.tags[2];
       }
     })
     popup_card.classList.add('show');
