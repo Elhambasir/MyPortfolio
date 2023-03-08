@@ -26,6 +26,10 @@ a {
   transition: all 0.5s;
 }
 
+p {
+  overflow: hidden;
+}
+
 li {
   list-style: none;
 }
@@ -35,6 +39,12 @@ li {
   margin: 0 auto;
   height: fit-content;
   background-color: #e5e5e5;
+}
+
+.blur {
+  filter: blur(8px);
+  z-index: 0;
+  mix-blend-mode: multiply;
 }
 
 .head {
@@ -142,6 +152,10 @@ header .logo a {
   transition-duration: 1s;
   transition-timing-function: ease-in-out;
   display: none;
+}
+
+.project-info button a {
+  margin: 0;
 }
 
 .social-media ul li a {
@@ -385,7 +399,7 @@ header .logo a:hover {
 }
 
 .project-info button {
-  padding: 7px 10px;
+  /* padding: 7px 10px; */
   border: 1px solid #0f27ff !important;
   width: fit-content !important;
   border-radius: 5px;
@@ -655,6 +669,193 @@ footer {
   width: 1px;
 }
 
+/* ///////Popup//////// */
+
+.popup {
+  width: 97%;
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  float: left;
+  padding: 3% 1.5%;
+  display: none;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.popup .popup_card {
+  width: 85%;
+  height: fit-content;
+  margin: 10px auto;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.popup .popup_card > * {
+  flex: 1;
+}
+
+.popup .popup_card .project_title {
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup .popup_card .project_title h1 {
+  margin: 0;
+}
+
+.popup .popup_card .project_title:nth-child(1) {
+  flex: 1;
+  text-align: left;
+}
+
+.popup .popup_card .project_title:nth-child(2) {
+  flex: 1;
+  text-align: right;
+}
+
+.popup .popup_card .label {
+  margin: 10px 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+}
+
+.popup .popup_card .label li {
+  color: #c1c7d0;
+  text-align: left;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 10px 5px;
+}
+
+.show {
+  display: block;
+}
+
+.popup .popup_card .tags li {
+  background-color: #ebebff;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10px;
+  padding: 4px 12px;
+  border-radius: 6px;
+}
+
+.popup .popup_card .label li:nth-child(1) {
+  flex: 1;
+  text-align: left;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
+.popup .popup_card .label li:nth-child(2) {
+  flex: 2;
+  text-align: center;
+}
+
+.popup .popup_card .label li:nth-child(3) {
+  flex: 1;
+}
+
+.popup .popup_card .img-cover {
+  width: 100%;
+  height: fit-content;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popup .popup_card .img-cover img {
+  width: 100%;
+}
+
+.popup .popup_card p {
+  text-align: left;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  padding-bottom: 10px;
+  margin: 0;
+  margin-top: 25px;
+}
+
+.popup .popup_card .tags {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin: 0;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid #ebecf0;
+  flex-wrap: wrap;
+}
+
+.popup .popup_card .project_detail .tag_button .tags li {
+  color: #6070ff;
+}
+
+.popup .popup_card .buttons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.popup .popup_card .btn_see_live {
+  flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 14px;
+  height: 40px;
+  border: 1px solid #6070ff;
+  color: #6070ff;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.popup .popup_card .btn_see_source {
+  flex: 1;
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 14px;
+  gap: 10px;
+  height: 40px;
+  left: 157px;
+  bottom: 4px;
+  border: 1px solid #6070ff;
+  color: #6070ff;
+  border-radius: 8px;
+}
+
+/* ///////Popup//////// */
+
 /* ///////////////////////TRANSITATION//////////////// */
 
 .box {
@@ -673,6 +874,10 @@ footer {
   header {
     width: 90%;
     margin: 0 auto;
+  }
+
+  a {
+    padding: 0;
   }
 
   header .logo {
@@ -775,13 +980,6 @@ footer {
     line-height: 42px;
   }
 
-  .project-info .label li {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 18px;
-    margin: 0;
-  }
-
   .project-info p {
     font-weight: 400;
     font-size: 14px;
@@ -799,6 +997,10 @@ footer {
 
   .order-2:nth-child(2) {
     order: 2;
+  }
+
+  .card-works p .buttons {
+    padding: 20px 10px;
   }
 
   /* ABOUT ME */
@@ -843,6 +1045,162 @@ footer {
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
+  }
+
+  .popup {
+    width: 97%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    float: left;
+    padding: 1% 1.5%;
+    display: none;
+    z-index: 1;
+  }
+
+  .popup .popup_card {
+    width: 90%;
+    height: fit-content;
+    margin: 10px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+  }
+
+  .popup .popup_card .project_title {
+    flex: 1;
+  }
+
+  .popup .popup_card .img-cover {
+    width: 90%;
+    height: 500px;
+    flex: 3;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .popup .popup_card .img-cover img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .popup .popup_card .project_detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 50px;
+    margin-top: 15px;
+  }
+
+  .popup .popup_card p {
+    text-align: justify;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    padding-bottom: 10px;
+    margin: 0;
+    margin-top: 25px;
+  }
+
+  .popup .popup_card .project_detail p {
+    flex: 2;
+  }
+
+  .contactme div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+  }
+
+  .popup .popup_card .project_detail div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex: 1;
+  }
+
+  .popup .popup_card .project_detail div .tags {
+    gap: 5px;
+  }
+
+  .project-info .label li {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .popup .popup_card .label {
+    margin: 10px 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .popup .popup_card .label li {
+    color: #c1c7d0;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 10px 5px;
+  }
+
+  .popup .popup_card .label li:nth-child(1) {
+    flex: 1;
+    text-align: center;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #344563;
+  }
+
+  .popup .popup_card .label li:nth-child(2) {
+    flex: 1;
+    text-align: left;
+  }
+
+  .popup .popup_card .label li:nth-child(3) {
+    flex: 3;
+  }
+
+  .popup .popup_card .project_detail div .tags li {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .popup .popup_card .tag_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .popup .popup_card .buttons {
+    display: flex;
+    flex-direction: row !important;
+  }
+
+  .popup .popup_card .buttons > * {
+    flex: 1;
+    font-size: 12px;
   }
 
   .aboutme .card-works .about p {
@@ -902,15 +1260,6 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     border-radius: 100px 0 0 0;
-  }
-
-  .contactme div {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
   }
 
   .contactme div textarea,
