@@ -50,7 +50,11 @@ btnSubmit.onclick = function storeData() {
   const name = document.querySelector('#name').value;
   const comment = document.querySelector('#comment').value;
   const email = document.querySelector('#email').value;
-  const userInfo = { name: name, email: email, comment: comment };
+  const userInfo = { 
+    name: name, 
+    email: email, 
+    comment: comment 
+  };
   const string = JSON.stringify(userInfo);
   localStorage.setItem('userInfo', string);
 };
