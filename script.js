@@ -112,35 +112,66 @@ projectInfo.forEach((element) => {
   projectDetail.classList = 'project-info';
   labels.classList = 'label';
   tags.classList = 'tags';
-  //...........................   
 
-  btn.addEventListener('click', function (){
-    const popupCard = document.querySelector('#detail');
-    projectInfo.forEach((item) => {
-      if (item.title === btn.parentNode.parentElement.firstChild.textContent) {
-        popupCard.children[1].children[0].children[0].innerHTML = item.title;
+//   btn.addEventListener('click', function shows() {
+//     const popupCard = document.querySelector('#detail');
+    
+//     projectInfo.forEach((item) => {
+//       if (item.title === btn.parentNode.parentElement.firstChild.textContent) {
+//         // const h1 = document.createElement('h1').innerHTML = item.title;
+//         // item.tags.forEach((tagElement) => {
+//         //   const tagItem = document.createElement('li');
+//         //   const liItem = document.createElement('a');
+//         //   liItem.href = '#';
+//         //   const tagItemContent = document.createTextNode(tagElement);
+//         //   liItem.appendChild(tagItemContent);
+//         //   tagItem.appendChild(liItem);
+//         //   tags.appendChild(tagItem);
+//         // });
+//         // item.labels.forEach((labelElement) => {
+//         //   const labelItem = document.createElement('li');
+//         //   const labelItemContent = document.createTextNode(labelElement);
+//         //   labelItem.appendChild(labelItemContent);
+//         //   labels.appendChild(labelItem);
+//         // });
 
-        popupCard.children[1].children[1].children[0].innerHTML = item.labels[0];
-        popupCard.children[1].children[1].children[1].children[1].innerHTML = item.labels[1];
-        popupCard.children[1].children[1].children[2].children[1].innerHTML = item.labels[2];
+//         // popupCard.children[1].children[0].children[0].innerHTML = item.title;
+//         // console.log(document.querySelector('.project_title').firstChild.innerText);
+//         document.querySelector('.project_title h1').innerHTML = item.title;
+//         item.labels.forEach((labelElement) => {
+//           const labelItemContent = document.createTextNode(labelElement);
+//           const labelItem = document.createElement('li');
+//           const img = document.createElement('img');
+//           img.src = './assets/icons/Counter.png';
+//           labelItem.appendChild(img);
+//           labelItem.appendChild(labelItemContent);
+//           // console.log(labelItem.firstChild);
+//           document.querySelector('.popup_card .label').appendChild(labelItem);
+//           document.querySelector('.popup_card .label').firstChild.appendChild(item.title);
+          
+//           });
 
-        popupCard.children[1].children[2].children[0].src = item.img;
+//         // popupCard.children[1].children[1].children[0].innerHTML = item.labels[0];
+//         // popupCard.children[1].children[1].children[1].children[1].innerHTML = item.labels[1];
+//         // popupCard.children[1].children[1].children[2].children[1].innerHTML = item.labels[2];
 
-        popupCard.children[1].children[3].children[0].innerHTML = item.description;
-        popupCard.children[1].children[3].children[1].children[0].children[0].innerHTML = item.tags[0];
-        popupCard.children[1].children[3].children[1].children[0].children[1].innerHTML = item.tags[1];
-        popupCard.children[1].children[3].children[1].children[0].children[2].innerHTML = item.tags[2];
-      }
-    });
-    popupCard.classList.add('show');
-    const conttainer = document.querySelector('.container');
-    conttainer.classList.add('blur');
-  });
-});
-const btnCloseProject = document.querySelector('#closeProject');
-btnCloseProject.addEventListener('click', function () {
-  const popupCard = document.querySelector('#detail');
-  popupCard.classList.remove('show');
-  const conttainer = document.querySelector('.container');
-  conttainer.classList.remove('blur');
+//       //   popupCard.children[1].children[2].children[0].src = item.img;
+
+//       //   popupCard.children[1].children[3].children[0].innerHTML = item.description;
+//       //   popupCard.children[1].children[3].children[1].children[0].children[0].innerHTML = item.tags[0];
+//       //   popupCard.children[1].children[3].children[1].children[0].children[1].innerHTML = item.tags[1];
+//       //   popupCard.children[1].children[3].children[1].children[0].children[2].innerHTML = item.tags[2];
+//        }
+//     });
+//     popupCard.classList.add('show');
+//     const conttainer = document.querySelector('.container');
+//     conttainer.classList.add('blur');
+//   });
+// });
+// const btnCloseProject = document.querySelector('#closeProject');
+// btnCloseProject.addEventListener('click', function shows() {
+//   const popupCard = document.querySelector('#detail');
+//   popupCard.classList.remove('show');
+//   const conttainer = document.querySelector('.container');
+//   conttainer.classList.remove('blur');
 });
