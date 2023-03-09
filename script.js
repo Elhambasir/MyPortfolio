@@ -39,8 +39,7 @@ email.addEventListener('input', (event) => {
   if (!emailRegExp.test(email.value)) {
     emailError.innerHTML = 'Email must be in lowercase';
     document.querySelector('.btnSubmit').type = 'button';
-  }
-  else {
+  } else {
     emailError.innerHTML = '';
     document.querySelector('.btnSubmit').type = 'submit';
   }
