@@ -111,37 +111,36 @@ projectInfo.forEach((element) => {
   imagCover.classList = 'image-cover order-1';
   projectDetail.classList = 'project-info';
   labels.classList = 'label';
-  tags.classList = 'tags'
+  tags.classList = 'tags';
   //...........................   
-  btn.addEventListener('click', function () {
-    const popup_card = document.querySelector('#detail');
+
+  btn.addEventListener('click', function (){
+    const popupCard = document.querySelector('#detail');
     projectInfo.forEach((item) => {
       if (item.title === btn.parentNode.parentElement.firstChild.textContent) {
-        popup_card.children[1].children[0].children[0].innerHTML = item.title;
+        popupCard.children[1].children[0].children[0].innerHTML = item.title;
 
-        popup_card.children[1].children[1].children[0].innerHTML = item.labels[0];
-        popup_card.children[1].children[1].children[1].children[1].innerHTML = item.labels[1];
-        popup_card.children[1].children[1].children[2].children[1].innerHTML = item.labels[2];
+        popupCard.children[1].children[1].children[0].innerHTML = item.labels[0];
+        popupCard.children[1].children[1].children[1].children[1].innerHTML = item.labels[1];
+        popupCard.children[1].children[1].children[2].children[1].innerHTML = item.labels[2];
 
-        popup_card.children[1].children[2].children[0].src = item.img;
+        popupCard.children[1].children[2].children[0].src = item.img;
 
-        popup_card.children[1].children[3].children[0].innerHTML = item.description;
-        popup_card.children[1].children[3].children[1].children[0].children[0].innerHTML = item.tags[0];
-        popup_card.children[1].children[3].children[1].children[0].children[1].innerHTML = item.tags[1];
-        popup_card.children[1].children[3].children[1].children[0].children[2].innerHTML = item.tags[2];
+        popupCard.children[1].children[3].children[0].innerHTML = item.description;
+        popupCard.children[1].children[3].children[1].children[0].children[0].innerHTML = item.tags[0];
+        popupCard.children[1].children[3].children[1].children[0].children[1].innerHTML = item.tags[1];
+        popupCard.children[1].children[3].children[1].children[0].children[2].innerHTML = item.tags[2];
       }
-    })
-    popup_card.classList.add('show');
+    });
+    popupCard.classList.add('show');
     const conttainer = document.querySelector('.container');
     conttainer.classList.add('blur');
   });
 });
 const btnCloseProject = document.querySelector('#closeProject');
 btnCloseProject.addEventListener('click', function () {
-  const popup_card = document.querySelector('#detail');
-  popup_card.classList.remove('show');
+  const popupCard = document.querySelector('#detail');
+  popupCard.classList.remove('show');
   const conttainer = document.querySelector('.container');
   conttainer.classList.remove('blur');
-})
-
-
+});
