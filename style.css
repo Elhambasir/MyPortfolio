@@ -670,7 +670,6 @@ footer {
 form small.error {
   color: red;
 }
-/* ////////////////////////MEDIA QUERY/////////////////// */
 
 @media all and (min-width: 768px) {
   header {

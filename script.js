@@ -31,19 +31,18 @@ btnMenuItem3.onclick = function show() {
   nav.classList.remove('display');
 };
 
-const form = document.querySelector('form');
 const email = document.getElementById('email');
 const emailError = document.querySelector('.btnSubmit + small.error');
 const emailRegExp = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
 
 email.addEventListener('input', (event) => {
-
   if (!emailRegExp.test(email.value)) {
     emailError.innerHTML = 'Email must be in lowercase';
     document.querySelector('.btnSubmit').type = 'button';
   }
-  if (email.value == email.value.toLowerCase()) {
+  else {
     emailError.innerHTML = '';
     document.querySelector('.btnSubmit').type = 'submit';
   }
+  event.preventDefault();
 });
