@@ -43,5 +43,4 @@ email.addEventListener('input', (event) => {
     emailError.innerHTML = '';
     document.querySelector('.btnSubmit').type = 'submit';
   }
-  event.preventDefault();
 });
