@@ -914,7 +914,9 @@ footer {
   transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
-/* ////////////////////////MEDIA QUERY/////////////////// */
+form small.error {
+  color: red;
+}
 
 @media all and (min-width: 768px) {
   header {
