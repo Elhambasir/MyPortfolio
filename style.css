@@ -89,6 +89,13 @@ header .logo {
   margin: 0 0 0 10px;
 }
 
+.card-works p.p_desc {
+  overflow: hidden;
+  word-break: break-all;
+  word-wrap: break-word;
+  height: 150px;
+}
+
 .headline a {
   width: fit-content;
   color: #6070ff;
@@ -237,6 +244,7 @@ header .logo a:hover {
 .display ul li a.btn-close {
   text-align: right;
   display: block;
+  cursor: pointer;
 }
 
 .toolbar ul li b {
@@ -420,6 +428,16 @@ header .logo a:hover {
   box-shadow: 0 8px 16px rgba(190, 196, 248, 0.24);
   border: 1px solid #6070ff;
   cursor: pointer;
+}
+
+button:hover {
+  background-color: #6070ff !important;
+  color: white !important;
+}
+
+button:active {
+  background-color: #2230d2 !important;
+  color: white !important;
 }
 
 .project-info button:hover {
@@ -719,6 +737,7 @@ footer {
 .popup .popup_card .project_title:nth-child(1) {
   flex: 1;
   text-align: left;
+  cursor: pointer;
 }
 
 .popup .popup_card .project_title:nth-child(2) {
@@ -816,7 +835,6 @@ footer {
   margin: 0;
   padding: 0 0 20px 0;
   border-bottom: 1px solid #ebecf0;
-  flex-wrap: wrap;
 }
 
 .popup .popup_card .project_detail .tag_button .tags li {
@@ -845,6 +863,7 @@ footer {
   color: #6070ff;
   border-radius: 8px;
   background-color: white;
+  cursor: pointer;
 }
 
 .popup .popup_card .btn_see_source {
@@ -863,6 +882,7 @@ footer {
   border: 1px solid #6070ff;
   color: #6070ff;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .overlay {
@@ -874,6 +894,10 @@ footer {
   background-color: #c1c7d0;
   z-index: 2;
   mix-blend-mode: multiply;
+}
+
+.popup .popup_card .label .label_li_img:first-of-type img {
+  display: none;
 }
 
 /* ///////Popup//////// */
@@ -1101,7 +1125,7 @@ footer {
 
   .popup .popup_card .img-cover {
     width: 90%;
-    height: 500px;
+    height: fit-content;
     flex: 3;
     margin: 0 auto;
     display: flex;

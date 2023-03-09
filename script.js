@@ -35,29 +35,32 @@ btnMenuItem3.onclick = function show() {
 const projectInfo = [
   {
     id: 'p1',
-    title: 'Preect-1',
+    title: 'Project-1',
     img: './assets/images/Snapshoot Portfolio.png',
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint veniam perspiciatis voluptas'
+      + ' asperiores assumenda, ducimus, sapiente sequi iure debitis rem consequuntur necessitatibus adipisci.'
       + ' asperiores assumenda, ducimus, sapiente sequi iure debitis rem consequuntur necessitatibus adipisci.',
     labels: ['CANOPY', 'Back End Dev', 1995],
     tags: ['html', 'css', 'javascript'],
   },
   {
     id: 'p2',
-    title: 'Preect-2',
+    title: 'Project-2',
     img: './assets/images/2.png',
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint veniam perspiciatis voluptas'
+      + ' asperiores assumenda, ducimus, sapiente sequi iure debitis rem consequuntur necessitatibus adipisci.'
       + ' asperiores assumenda, ducimus, sapiente sequi iure debitis rem consequuntur necessitatibus adipisci.',
     labels: ['CANOPY', 'Back End Dev', 2015],
     tags: ['html', 'css', 'javascript'],
   },
   {
     id: 'p3',
-    title: 'Preect-3',
+    title: 'Project-3',
     img: './assets/images/1.png',
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint veniam perspiciatis voluptas'
+      + ' asperiores assumenda, ducimus, sapiente sequi iure debitis rem consequuntur necessitatibus adipisci.'
       + ' asperiores assumenda, ducimus, sapiente sequi iure debitis rem consequuntur necessitatibus adipisci.',
-    labels: ['CANOPY', 'Back End Dev', 2015],
+    labels: ['CANOPY', 'Back End Dev', 2022],
     tags: ['html', 'css', 'javascript'],
   },
 ];
@@ -68,6 +71,7 @@ projectInfo.forEach((element) => {
   const tags = document.createElement('ul');
   const labels = document.createElement('ul');
   const desc = document.createElement('p');
+  desc.classList = "p_desc";
   const image = document.createElement('img');
   const title = document.createElement('h1');
   const imagCover = document.createElement('div');
@@ -113,65 +117,72 @@ projectInfo.forEach((element) => {
   labels.classList = 'label';
   tags.classList = 'tags';
 
-//   btn.addEventListener('click', function shows() {
-//     const popupCard = document.querySelector('#detail');
-    
-//     projectInfo.forEach((item) => {
-//       if (item.title === btn.parentNode.parentElement.firstChild.textContent) {
-//         // const h1 = document.createElement('h1').innerHTML = item.title;
-//         // item.tags.forEach((tagElement) => {
-//         //   const tagItem = document.createElement('li');
-//         //   const liItem = document.createElement('a');
-//         //   liItem.href = '#';
-//         //   const tagItemContent = document.createTextNode(tagElement);
-//         //   liItem.appendChild(tagItemContent);
-//         //   tagItem.appendChild(liItem);
-//         //   tags.appendChild(tagItem);
-//         // });
-//         // item.labels.forEach((labelElement) => {
-//         //   const labelItem = document.createElement('li');
-//         //   const labelItemContent = document.createTextNode(labelElement);
-//         //   labelItem.appendChild(labelItemContent);
-//         //   labels.appendChild(labelItem);
-//         // });
+  btn.addEventListener('click', function shows() {
 
-//         // popupCard.children[1].children[0].children[0].innerHTML = item.title;
-//         // console.log(document.querySelector('.project_title').firstChild.innerText);
-//         document.querySelector('.project_title h1').innerHTML = item.title;
-//         item.labels.forEach((labelElement) => {
-//           const labelItemContent = document.createTextNode(labelElement);
-//           const labelItem = document.createElement('li');
-//           const img = document.createElement('img');
-//           img.src = './assets/icons/Counter.png';
-//           labelItem.appendChild(img);
-//           labelItem.appendChild(labelItemContent);
-//           // console.log(labelItem.firstChild);
-//           document.querySelector('.popup_card .label').appendChild(labelItem);
-//           document.querySelector('.popup_card .label').firstChild.appendChild(item.title);
-          
-//           });
+    const popup = document.querySelector('#detail');
 
-//         // popupCard.children[1].children[1].children[0].innerHTML = item.labels[0];
-//         // popupCard.children[1].children[1].children[1].children[1].innerHTML = item.labels[1];
-//         // popupCard.children[1].children[1].children[2].children[1].innerHTML = item.labels[2];
-
-//       //   popupCard.children[1].children[2].children[0].src = item.img;
-
-//       //   popupCard.children[1].children[3].children[0].innerHTML = item.description;
-//       //   popupCard.children[1].children[3].children[1].children[0].children[0].innerHTML = item.tags[0];
-//       //   popupCard.children[1].children[3].children[1].children[0].children[1].innerHTML = item.tags[1];
-//       //   popupCard.children[1].children[3].children[1].children[0].children[2].innerHTML = item.tags[2];
-//        }
-//     });
-//     popupCard.classList.add('show');
-//     const conttainer = document.querySelector('.container');
-//     conttainer.classList.add('blur');
-//   });
-// });
-// const btnCloseProject = document.querySelector('#closeProject');
-// btnCloseProject.addEventListener('click', function shows() {
-//   const popupCard = document.querySelector('#detail');
-//   popupCard.classList.remove('show');
-//   const conttainer = document.querySelector('.container');
-//   conttainer.classList.remove('blur');
+    projectInfo.forEach((item) => {
+      if (item.title === btn.parentNode.parentElement.firstChild.textContent) {
+        const popupCard = `<div class="overlay"></div>
+                          <div class="popup_card"> 
+                              <div class="project_title">
+                                <h1>${item.title}</h1>
+                                <img id="closeProject" src="assets/icons/close.png" alt="close">
+                              </div>
+                            <ul class="label" id="label">
+                                 <li>${item.labels[0]}</li>
+                                 <li><img src="./assets/icons/Counter.png"/>&nbsp; ${item.labels[1]}</li>
+                                 <li><img src="./assets/icons/Counter.png"/>&nbsp; ${item.labels[2]}</li>
+                            </ul>
+                          <div class="img-cover">
+                            <img src="${item.img}"  alt="project-image">
+                          </div>
+                        <div class="project_detail">
+                          <p>${item.description}</p>
+                            <div class="tag_button">
+                                <ul class="tags">         
+                                  <li>${item.tags[0]}</li>
+                                  <li>${item.tags[1]}</li>
+                                  <li>${item.tags[2]}</li>
+                                </ul>
+                                <div class="buttons">
+                                <button class="btn_see_live">See live <img src="assets/icons/external.png"
+                                        alt="external-icon"></button>
+                                <button class="btn_see_source">See Source <img src="assets/icons/blu_gitgub.png"
+                                        alt="external-icon"></button>
+                                </div>
+                          </div>
+                        </div>
+                     </div>`
+        popup.innerHTML = popupCard;
+        popup.classList.add('show');
+        const container = document.querySelector('.container');
+        container.classList.add('blur');
+        const btnCloseProject = document.querySelector('#closeProject');
+        btnCloseProject.addEventListener('click', function shows() {
+          popup.classList.remove('show');
+          const conttainer = document.querySelector('.container');
+          conttainer.classList.remove('blur');
+        });
+      }
+    });
+    const btnSeeLive = document.querySelector('.btn_see_live');
+    const btnSeeSource = document.querySelector('.btn_see_source');
+    btnSeeSource.addEventListener("mouseover", function () {
+      const img = document.querySelector('.btn_see_source img');
+      img.src = '/assets/icons/g.png';
+    });
+    btnSeeLive.addEventListener("mouseover", function () {
+      const img = document.querySelector('.btn_see_live img');
+      img.src = '/assets/icons/external-link-16.png';
+    });
+    btnSeeSource.addEventListener("mouseout", function () {
+      const img = document.querySelector('.btn_see_source img');
+      img.src = 'assets/icons/blu_gitgub.png';
+    });
+    btnSeeLive.addEventListener("mouseout", function () {
+      const img = document.querySelector('.btn_see_live img');
+      img.src = 'assets/icons/external.png';
+    });
+  });
 });
