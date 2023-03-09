@@ -30,7 +30,7 @@ btnMenuItem2.onclick = function show() {
 btnMenuItem3.onclick = function show() {
   nav.classList.remove('display');
 };
-
+const form = document.querySelector('form');
 const email = document.getElementById('email');
 const emailError = document.querySelector('.btnSubmit + small.error');
 const emailRegExp = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
@@ -43,4 +43,23 @@ email.addEventListener('input', (event) => {
     emailError.innerHTML = '';
     document.querySelector('.btnSubmit').type = 'submit';
   }
+  event.preventDefault();
 });
+
+const btnSubmit = document.querySelector('.btnSubmit');
+btnSubmit.onclick = function storeData() {
+  var name = document.querySelector('#name').value;
+  var comment = document.querySelector('#comment').value;
+  var email = document.querySelector('#email').value;
+  const userInfo = {'name':name,'email':email,'comment':comment};
+  const string = JSON.stringify(userInfo);
+  localStorage.setItem('userInfo',string);
+};
+
+window.onload = function retrieveData () {
+  const data = JSON.parse(localStorage.getItem('userInfo'));
+  console.log(data);
+  document.querySelector('#name').value = data.name;
+  document.querySelector('#comment').value = data.comment;
+  document.querySelector('#email').value = data.email;
+}
