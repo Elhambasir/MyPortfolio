@@ -46,16 +46,41 @@ email.addEventListener('input', (event) => {
 });
 
 const btnSubmit = document.querySelector('.btnSubmit');
+const username = document.getElementById('name');
+const comment = document.getElementById('comment');
+username.addEventListener('input', (event) => {
+  if (username.value !== undefined && username.value.trim() != "") {
+    const userInfo = { 'name': username.value, 'email': email.value, 'comment': comment.value };
+    const string = JSON.stringify(userInfo);
+    localStorage.setItem('userInfo', string);
+  }
+  event.preventDefault();
+});
+comment.addEventListener('input', (event) => {
+  if (comment.value !== undefined && comment.value.trim() != "") {
+    const userInfo = { 'name': username.value, 'email': email.value, 'comment': comment.value };
+    const string = JSON.stringify(userInfo);
+    localStorage.setItem('userInfo', string);
+  }
+  event.preventDefault();
+});
+email.addEventListener('input', (event) => {
+  if (email.value !== undefined && email.value.trim() != "") {
+    const userInfo = { 'name': username.value, 'email': email.value, 'comment': comment.value };
+    const string = JSON.stringify(userInfo);
+    localStorage.setItem('userInfo', string);
+  }
+  event.preventDefault();
+});
+
 btnSubmit.onclick = function storeData() {
-  const name = document.querySelector('#name').value;
-  const comment = document.querySelector('#comment').value;
-  const email = document.querySelector('#email').value;
   const userInfo = {
-    name,
-    email,
-    comment,
+    name: username.value,
+    email: email.value,
+    comment: comment.value,
   };
   const string = JSON.stringify(userInfo);
+  localStorage.setItem('userInfo', userInfo);
   localStorage.setItem('userInfo', string);
 };
 
