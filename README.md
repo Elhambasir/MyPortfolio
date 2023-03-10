@@ -108,7 +108,10 @@ To run tests, run the following command: In visual studio code with live server 
 <!-- CONTRIBUTING -->
 ## Contributions
 
-*GitHub: [Nelofarzabi]((https://github.com/Nelofarzabi)
+*GitHub: [Dorcas126](https://github.com/Dorcas126)
+*GitHub: [KAYEMBAJONATHAN](https://github.com/KAYEMBAJONATHAN)
+*GitHub: [Nelofarzabi](https://github.com/Nelofarzabi)
+*GitHub: [popey17](https://github.com/popey17)
 
 Feel free to check the [issues page](../../issues/).
 
