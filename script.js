@@ -38,7 +38,6 @@ const projectInfo = [
     title: 'Project-1',
     img: './assets/images/Snapshoot Portfolio.png',
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint veniam perspiciatis voluptas'
-      + ' asperiores assumenda, ducimus, sapiente sequi iure debitis rem consequuntur necessitatibus adipisci.'
       + ' asperiores assumenda, ducimus, sapiente sequi iure debitis rem consequuntur necessitatibus adipisci.',
     labels: ['CANOPY', 'Back End Dev', 1995],
     tags: ['html', 'css', 'javascript'],
@@ -48,7 +47,6 @@ const projectInfo = [
     title: 'Project-2',
     img: './assets/images/2.png',
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint veniam perspiciatis voluptas'
-      + ' asperiores assumenda, ducimus, sapiente sequi iure debitis rem consequuntur necessitatibus adipisci.'
       + ' asperiores assumenda, ducimus, sapiente sequi iure debitis rem consequuntur necessitatibus adipisci.',
     labels: ['CANOPY', 'Back End Dev', 2015],
     tags: ['html', 'css', 'javascript'],
@@ -58,7 +56,6 @@ const projectInfo = [
     title: 'Project-3',
     img: './assets/images/1.png',
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint veniam perspiciatis voluptas'
-      + ' asperiores assumenda, ducimus, sapiente sequi iure debitis rem consequuntur necessitatibus adipisci.'
       + ' asperiores assumenda, ducimus, sapiente sequi iure debitis rem consequuntur necessitatibus adipisci.',
     labels: ['CANOPY', 'Back End Dev', 2022],
     tags: ['html', 'css', 'javascript'],

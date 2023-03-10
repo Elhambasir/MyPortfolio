@@ -699,16 +699,18 @@ footer {
   float: left;
   padding: 3% 1.5%;
   display: none;
+  mix-blend-mode: revert;
 }
 
 .popup .popup_card {
   width: 80%;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: auto;
+  bottom: auto;
   left: 5%;
   right: 5%;
   height: fit-content;
-  margin: 10px auto;
+  margin: 15px auto;
   background-color: white;
   padding: 15px;
   border-radius: 8px;
@@ -792,20 +794,23 @@ footer {
   font-size: 13px;
   line-height: 16px;
   color: #344563;
+  padding: 5px;
 }
 
 .popup .popup_card .label li:nth-child(2) {
   flex: 2;
   text-align: center;
+  padding: 5px;
 }
 
 .popup .popup_card .label li:nth-child(3) {
   flex: 1;
+  padding: 5px;
 }
 
 .popup .popup_card .img-cover {
   width: 100%;
-  height: fit-content;
+  height: 20%;
   margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -813,6 +818,7 @@ footer {
 
 .popup .popup_card .img-cover img {
   width: 100%;
+  height: 100%;
 }
 
 .popup .popup_card p {
@@ -823,7 +829,7 @@ footer {
   color: #344563;
   padding-bottom: 10px;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 .popup .popup_card .tags {
@@ -1096,27 +1102,27 @@ form small.error {
   }
 
   .popup {
-    width: 97%;
+    width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     margin: 0 auto;
     float: left;
-    padding: 1% 1.5%;
     display: none;
     z-index: 1;
   }
 
   .popup .popup_card {
-    width: 85%;
+    width: 70%;
     position: absolute;
-    top: 5%;
-    left: 5%;
+    top: auto;
+    bottom: auto;
+    left: 1%;
     height: fit-content;
-    margin: 10px auto;
+    margin: 0 auto;
     background-color: white;
-    padding: 25px 15px;
+    padding: 15px 0;
     border-radius: 8px;
     z-index: 2;
   }
@@ -1125,9 +1131,14 @@ form small.error {
     flex: 1;
   }
 
+  .popup .popup_card .project_title h1 {
+    margin: 0;
+    margin-left: 25px;
+  }
+
   .popup .popup_card .img-cover {
     width: 90%;
-    height: fit-content;
+    height: 300px;
     flex: 3;
     margin: 0 auto;
     display: flex;
@@ -1147,18 +1158,17 @@ form small.error {
     gap: 50px;
     width: 90%;
     margin: 0 auto;
-    margin-top: 15px;
+    overflow: hidden;
   }
 
   .popup .popup_card p {
-    text-align: justify;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    text-align: left;
+    font-style: normal;
+    font-size: 12px;
     color: #344563;
     padding-bottom: 10px;
     margin: 0;
-    margin-top: 25px;
+    margin-top: 15px;
   }
 
   .popup .popup_card .project_detail p {
@@ -1340,6 +1350,41 @@ form small.error {
   }
 }
 
+@media all and (min-width: 1440px) {
+  .popup .popup_card {
+    width: 72%;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: 1%;
+    height: fit-content;
+    margin: 0 auto;
+    background-color: white;
+    padding: 15px 0;
+    border-radius: 8px;
+    z-index: 2;
+  }
+
+  .popup .popup_card .img-cover {
+    width: 90%;
+    height: 440px;
+    flex: 3;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .popup .popup_card .project_detail div .tags {
+    gap: 5px;
+    margin-top: 44px;
+  }
+
+  .popup .popup_card .project_title h1 {
+    margin: 0;
+    margin-left: 45px;
+  }
+}
+
 @media all and (min-width: 1024px) {
   .head {
     height: 916px;
@@ -1362,6 +1407,30 @@ form small.error {
     position: relative;
     top: 0;
     left: -7%;
+  }
+
+  .popup .popup_card {
+    width: 60%;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: 1%;
+    height: fit-content;
+    margin: 0 auto;
+    background-color: white;
+    padding: 15px 0;
+    border-radius: 8px;
+    z-index: 2;
+  }
+
+  .popup .popup_card .project_detail div .tags {
+    gap: 5px;
+    margin-top: 20px;
+  }
+
+  .popup .popup_card .btn_see_live,
+  .popup .popup_card .btn_see_source {
+    height: 32px;
   }
 
   /* PROJECT */
@@ -1561,4 +1630,11 @@ form small.error {
   }
 
   /* ////end//// */
+}
+
+@media (min-width: 2560px) {
+  .popup .popup_card .img-cover {
+    width: 90%;
+    height: 817px;
+  }
 }
