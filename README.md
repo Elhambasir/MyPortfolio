@@ -43,6 +43,7 @@ Hello , this a mobile first portfolio project</a>
 ### Tech Stack 
 HTML
 CSS
+JAVASCRIPT
 
 ### Key Features 
 
@@ -107,7 +108,7 @@ To run tests, run the following command: In visual studio code with live server 
 <!-- CONTRIBUTING -->
 ## Contributions
 
-*GitHub: [kayembajonathan]((https://github.com/KAYEMBAJONATHAN)
+*GitHub: [Nelofarzabi]((https://github.com/Nelofarzabi)
 
 Feel free to check the [issues page](../../issues/).
 
