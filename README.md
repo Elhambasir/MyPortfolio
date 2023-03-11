@@ -43,6 +43,7 @@ Hello , this a mobile first portfolio project</a>
 ### Tech Stack 
 HTML
 CSS
+JAVASCRIPT
 
 ### Key Features 
 
@@ -79,7 +80,9 @@ To run tests, run the following command: In visual studio code with live server 
 
 ### Deployment
 
-You can deploy this project using: GitHub
+## 🚀 Live Demo <a name="Live Demo"></a>
+
+[Live Demo Link](https://elhambasir.github.io/MyPortfolio/)
 
 <!-- AUTHORS -->
 
@@ -105,6 +108,11 @@ You can deploy this project using: GitHub
 ## Contributions
 
 Contributions, issues, and feature requests are welcome!
+
+*GitHub: [Dorcas126](https://github.com/Dorcas126)
+*GitHub: [KAYEMBAJONATHAN](https://github.com/KAYEMBAJONATHAN)
+*GitHub: [Nelofarzabi](https://github.com/Nelofarzabi)
+*GitHub: [popey17](https://github.com/popey17)
 
 Feel free to check the [issues page](../../issues/).
 
