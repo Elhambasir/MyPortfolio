@@ -197,7 +197,7 @@ email.addEventListener('input', (event) => {
     document.querySelector('.btnSubmit').type = 'submit';
   }
   event.preventDefault();
-
+});
 
 const btnSubmit = document.querySelector('.btnSubmit');
 const username = document.getElementById('name');
