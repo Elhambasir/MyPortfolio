@@ -88,7 +88,6 @@ To run tests, run the following command: In visual studio code with live server 
 
 ## 👥 Authors <a name="authors"></a>
 
-
 👤 **Author**
 
 - GitHub: [@Elhambasir](https://github.com/Elhambasir)
@@ -108,6 +107,8 @@ To run tests, run the following command: In visual studio code with live server 
 <!-- CONTRIBUTING -->
 ## Contributions
 
+Contributions, issues, and feature requests are welcome!
+
 *GitHub: [Dorcas126](https://github.com/Dorcas126)
 *GitHub: [KAYEMBAJONATHAN](https://github.com/KAYEMBAJONATHAN)
 *GitHub: [Nelofarzabi](https://github.com/Nelofarzabi)
@@ -118,8 +119,6 @@ Feel free to check the [issues page](../../issues/).
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SUPPORT -->
-
-> Write a message to encourage readers to support your project
 
 If you like this project reach me on my contact
 
